@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB7A2D4C1EDEAE36008998E1 /* YjiTabBarVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7A2D4B1EDEAE36008998E1 /* YjiTabBarVc.swift */; };
+		DB7A2D4F1EDEB7B2008998E1 /* YjiLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7A2D4E1EDEB7B2008998E1 /* YjiLocationManager.swift */; };
+		DB7A2D511EDEBA96008998E1 /* YjiMapVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7A2D501EDEBA96008998E1 /* YjiMapVc.swift */; };
+		DB7A2D551EDEBEBB008998E1 /* YjiRootVcManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7A2D541EDEBEBB008998E1 /* YjiRootVcManager.swift */; };
+		DBC1AEC31EDE5F04007F8345 /* UserInfo_background.JPG in Resources */ = {isa = PBXBuildFile; fileRef = DBC1AEC21EDE5F04007F8345 /* UserInfo_background.JPG */; };
+		DBC1AEE81EDE6B1A007F8345 /* UIViewController+Animator.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC1AEE51EDE6B1A007F8345 /* UIViewController+Animator.m */; };
+		DBC1AEE91EDE6B1A007F8345 /* ZBFallenBricksAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC1AEE71EDE6B1A007F8345 /* ZBFallenBricksAnimator.m */; };
+		DBC1AEEF1EDE713D007F8345 /* YjiUserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC1AEEE1EDE713D007F8345 /* YjiUserInfoViewController.swift */; };
+		DBC1AEF31EDE7EEA007F8345 /* YjiBaseVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC1AEF21EDE7EEA007F8345 /* YjiBaseVc.swift */; };
+		DBD9CA241EDBDDF600636DB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD9CA231EDBDDF600636DB5 /* AppDelegate.swift */; };
+		DBD9CA291EDBDDF600636DB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBD9CA271EDBDDF600636DB5 /* Main.storyboard */; };
+		DBD9CA2B1EDBDDF600636DB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBD9CA2A1EDBDDF600636DB5 /* Assets.xcassets */; };
+		DBD9CA2E1EDBDDF600636DB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBD9CA2C1EDBDDF600636DB5 /* LaunchScreen.storyboard */; };
+		DBD9CA3B1EDBE0E000636DB5 /* Login.JPG in Resources */ = {isa = PBXBuildFile; fileRef = DBD9CA3A1EDBE0E000636DB5 /* Login.JPG */; };
+		DBD9CA521EDBF2C200636DB5 /* fb_login.png in Resources */ = {isa = PBXBuildFile; fileRef = DBD9CA501EDBF2C200636DB5 /* fb_login.png */; };
+		DBD9CA531EDBF2C200636DB5 /* tw_login.png in Resources */ = {isa = PBXBuildFile; fileRef = DBD9CA511EDBF2C200636DB5 /* tw_login.png */; };
+		DBD9CA561EDBF4B500636DB5 /* fb_login2.png in Resources */ = {isa = PBXBuildFile; fileRef = DBD9CA541EDBF4B500636DB5 /* fb_login2.png */; };
+		DBD9CA571EDBF4B500636DB5 /* tw_login2.png in Resources */ = {isa = PBXBuildFile; fileRef = DBD9CA551EDBF4B500636DB5 /* tw_login2.png */; };
+		DBD9CA5A1EDC013200636DB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD9CA591EDC013200636DB5 /* ViewController.swift */; };
+		DBD9CA5C1EDC033000636DB5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBD9CA5B1EDC033000636DB5 /* GoogleService-Info.plist */; };
+		DBD9CA6A1EDC252F00636DB5 /* icon-error.png in Resources */ = {isa = PBXBuildFile; fileRef = DBD9CA641EDC252F00636DB5 /* icon-error.png */; };
+		DBD9CA6B1EDC252F00636DB5 /* icon-error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBD9CA651EDC252F00636DB5 /* icon-error@2x.png */; };
+		DBD9CA6C1EDC252F00636DB5 /* icon-info.png in Resources */ = {isa = PBXBuildFile; fileRef = DBD9CA661EDC252F00636DB5 /* icon-info.png */; };
+		DBD9CA6D1EDC252F00636DB5 /* icon-info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBD9CA671EDC252F00636DB5 /* icon-info@2x.png */; };
+		DBD9CA6E1EDC252F00636DB5 /* icon-success.png in Resources */ = {isa = PBXBuildFile; fileRef = DBD9CA681EDC252F00636DB5 /* icon-success.png */; };
+		DBD9CA6F1EDC252F00636DB5 /* icon-success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBD9CA691EDC252F00636DB5 /* icon-success@2x.png */; };
+		FE5B43A49228993429F05841 /* Pods_YjiTalkToStranger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C65FF676536B03ACDFB78B0 /* Pods_YjiTalkToStranger.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8C65FF676536B03ACDFB78B0 /* Pods_YjiTalkToStranger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YjiTalkToStranger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA23A8B13A8DC563AF79E6D /* Pods-YjiTalkToStranger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YjiTalkToStranger.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YjiTalkToStranger/Pods-YjiTalkToStranger.debug.xcconfig"; sourceTree = "<group>"; };
+		DB7A2D4B1EDEAE36008998E1 /* YjiTabBarVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YjiTabBarVc.swift; sourceTree = "<group>"; };
+		DB7A2D4E1EDEB7B2008998E1 /* YjiLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YjiLocationManager.swift; sourceTree = "<group>"; };
+		DB7A2D501EDEBA96008998E1 /* YjiMapVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YjiMapVc.swift; sourceTree = "<group>"; };
+		DB7A2D541EDEBEBB008998E1 /* YjiRootVcManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YjiRootVcManager.swift; sourceTree = "<group>"; };
+		DB7A2D561EDEC952008998E1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DBC1AEC21EDE5F04007F8345 /* UserInfo_background.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = UserInfo_background.JPG; sourceTree = "<group>"; };
+		DBC1AEE41EDE6B1A007F8345 /* UIViewController+Animator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Animator.h"; sourceTree = "<group>"; };
+		DBC1AEE51EDE6B1A007F8345 /* UIViewController+Animator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Animator.m"; sourceTree = "<group>"; };
+		DBC1AEE61EDE6B1A007F8345 /* ZBFallenBricksAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBFallenBricksAnimator.h; sourceTree = "<group>"; };
+		DBC1AEE71EDE6B1A007F8345 /* ZBFallenBricksAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBFallenBricksAnimator.m; sourceTree = "<group>"; };
+		DBC1AEEE1EDE713D007F8345 /* YjiUserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YjiUserInfoViewController.swift; sourceTree = "<group>"; };
+		DBC1AEF21EDE7EEA007F8345 /* YjiBaseVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YjiBaseVc.swift; sourceTree = "<group>"; };
+		DBD9CA201EDBDDF600636DB5 /* YjiTalkToStranger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YjiTalkToStranger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBD9CA231EDBDDF600636DB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DBD9CA281EDBDDF600636DB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DBD9CA2A1EDBDDF600636DB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DBD9CA2D1EDBDDF600636DB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DBD9CA2F1EDBDDF600636DB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBD9CA3A1EDBE0E000636DB5 /* Login.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Login.JPG; sourceTree = "<group>"; };
+		DBD9CA501EDBF2C200636DB5 /* fb_login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fb_login.png; sourceTree = "<group>"; };
+		DBD9CA511EDBF2C200636DB5 /* tw_login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tw_login.png; sourceTree = "<group>"; };
+		DBD9CA541EDBF4B500636DB5 /* fb_login2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fb_login2.png; sourceTree = "<group>"; };
+		DBD9CA551EDBF4B500636DB5 /* tw_login2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tw_login2.png; sourceTree = "<group>"; };
+		DBD9CA591EDC013200636DB5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DBD9CA5B1EDC033000636DB5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DBD9CA5D1EDC1AB000636DB5 /* YjiTalkToStranger-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YjiTalkToStranger-Bridging-Header.h"; sourceTree = "<group>"; };
+		DBD9CA641EDC252F00636DB5 /* icon-error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-error.png"; sourceTree = "<group>"; };
+		DBD9CA651EDC252F00636DB5 /* icon-error@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-error@2x.png"; sourceTree = "<group>"; };
+		DBD9CA661EDC252F00636DB5 /* icon-info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-info.png"; sourceTree = "<group>"; };
+		DBD9CA671EDC252F00636DB5 /* icon-info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-info@2x.png"; sourceTree = "<group>"; };
+		DBD9CA681EDC252F00636DB5 /* icon-success.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-success.png"; sourceTree = "<group>"; };
+		DBD9CA691EDC252F00636DB5 /* icon-success@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-success@2x.png"; sourceTree = "<group>"; };
+		F66E92FABE81D4B15C8720D1 /* Pods-YjiTalkToStranger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YjiTalkToStranger.release.xcconfig"; path = "Pods/Target Support Files/Pods-YjiTalkToStranger/Pods-YjiTalkToStranger.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBD9CA1D1EDBDDF600636DB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE5B43A49228993429F05841 /* Pods_YjiTalkToStranger.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5919E210BC7A8BE0F7763FA5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB7A2D561EDEC952008998E1 /* CoreLocation.framework */,
+				8C65FF676536B03ACDFB78B0 /* Pods_YjiTalkToStranger.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5EF9CF91E008195EE67A8FC4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CEA23A8B13A8DC563AF79E6D /* Pods-YjiTalkToStranger.debug.xcconfig */,
+				F66E92FABE81D4B15C8720D1 /* Pods-YjiTalkToStranger.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DB7A2D4D1EDEB7B2008998E1 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				DB7A2D4E1EDEB7B2008998E1 /* YjiLocationManager.swift */,
+				DB7A2D501EDEBA96008998E1 /* YjiMapVc.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		DBC1AEE31EDE6B1A007F8345 /* ZBCustomTransitions */ = {
+			isa = PBXGroup;
+			children = (
+				DBC1AEE41EDE6B1A007F8345 /* UIViewController+Animator.h */,
+				DBC1AEE51EDE6B1A007F8345 /* UIViewController+Animator.m */,
+				DBC1AEE61EDE6B1A007F8345 /* ZBFallenBricksAnimator.h */,
+				DBC1AEE71EDE6B1A007F8345 /* ZBFallenBricksAnimator.m */,
+			);
+			path = ZBCustomTransitions;
+			sourceTree = "<group>";
+		};
+		DBD9CA171EDBDDF600636DB5 = {
+			isa = PBXGroup;
+			children = (
+				DBD9CA221EDBDDF600636DB5 /* YjiTalkToStranger */,
+				DBD9CA211EDBDDF600636DB5 /* Products */,
+				5EF9CF91E008195EE67A8FC4 /* Pods */,
+				5919E210BC7A8BE0F7763FA5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DBD9CA211EDBDDF600636DB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBD9CA201EDBDDF600636DB5 /* YjiTalkToStranger.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBD9CA221EDBDDF600636DB5 /* YjiTalkToStranger */ = {
+			isa = PBXGroup;
+			children = (
+				DB7A2D4D1EDEB7B2008998E1 /* Map */,
+				DBD9CA601EDC1F6400636DB5 /* Custom */,
+				DBD9CA581EDC013200636DB5 /* Login */,
+				DBD9CA231EDBDDF600636DB5 /* AppDelegate.swift */,
+				DBD9CA271EDBDDF600636DB5 /* Main.storyboard */,
+				DBD9CA2A1EDBDDF600636DB5 /* Assets.xcassets */,
+				DBD9CA2C1EDBDDF600636DB5 /* LaunchScreen.storyboard */,
+				DBD9CA2F1EDBDDF600636DB5 /* Info.plist */,
+				DBD9CA5B1EDC033000636DB5 /* GoogleService-Info.plist */,
+				DBD9CA5D1EDC1AB000636DB5 /* YjiTalkToStranger-Bridging-Header.h */,
+				DBD9CA351EDBDF3700636DB5 /* Image */,
+			);
+			path = YjiTalkToStranger;
+			sourceTree = "<group>";
+		};
+		DBD9CA351EDBDF3700636DB5 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				DBC1AEC21EDE5F04007F8345 /* UserInfo_background.JPG */,
+				DBD9CA641EDC252F00636DB5 /* icon-error.png */,
+				DBD9CA651EDC252F00636DB5 /* icon-error@2x.png */,
+				DBD9CA661EDC252F00636DB5 /* icon-info.png */,
+				DBD9CA671EDC252F00636DB5 /* icon-info@2x.png */,
+				DBD9CA681EDC252F00636DB5 /* icon-success.png */,
+				DBD9CA691EDC252F00636DB5 /* icon-success@2x.png */,
+				DBD9CA541EDBF4B500636DB5 /* fb_login2.png */,
+				DBD9CA551EDBF4B500636DB5 /* tw_login2.png */,
+				DBD9CA501EDBF2C200636DB5 /* fb_login.png */,
+				DBD9CA511EDBF2C200636DB5 /* tw_login.png */,
+				DBD9CA3A1EDBE0E000636DB5 /* Login.JPG */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		DBD9CA581EDC013200636DB5 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DBD9CA591EDC013200636DB5 /* ViewController.swift */,
+				DBC1AEEE1EDE713D007F8345 /* YjiUserInfoViewController.swift */,
+				DB7A2D4B1EDEAE36008998E1 /* YjiTabBarVc.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		DBD9CA601EDC1F6400636DB5 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				DBC1AEE31EDE6B1A007F8345 /* ZBCustomTransitions */,
+				DBC1AEF21EDE7EEA007F8345 /* YjiBaseVc.swift */,
+				DB7A2D541EDEBEBB008998E1 /* YjiRootVcManager.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DBD9CA1F1EDBDDF600636DB5 /* YjiTalkToStranger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBD9CA321EDBDDF600636DB5 /* Build configuration list for PBXNativeTarget "YjiTalkToStranger" */;
+			buildPhases = (
+				4C5C156D06C155D19ED4A6C5 /* [CP] Check Pods Manifest.lock */,
+				DBD9CA1C1EDBDDF600636DB5 /* Sources */,
+				DBD9CA1D1EDBDDF600636DB5 /* Frameworks */,
+				DBD9CA1E1EDBDDF600636DB5 /* Resources */,
+				817430B07569F4AF987E572B /* [CP] Embed Pods Frameworks */,
+				2FA4625DF27410EAE49B37A2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YjiTalkToStranger;
+			productName = YjiTalkToStranger;
+			productReference = DBD9CA201EDBDDF600636DB5 /* YjiTalkToStranger.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBD9CA181EDBDDF600636DB5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Ericji;
+				TargetAttributes = {
+					DBD9CA1F1EDBDDF600636DB5 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = VNBQ242BN8;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = DBD9CA1B1EDBDDF600636DB5 /* Build configuration list for PBXProject "YjiTalkToStranger" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DBD9CA171EDBDDF600636DB5;
+			productRefGroup = DBD9CA211EDBDDF600636DB5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBD9CA1F1EDBDDF600636DB5 /* YjiTalkToStranger */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DBD9CA1E1EDBDDF600636DB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBC1AEC31EDE5F04007F8345 /* UserInfo_background.JPG in Resources */,
+				DBD9CA561EDBF4B500636DB5 /* fb_login2.png in Resources */,
+				DBD9CA6D1EDC252F00636DB5 /* icon-info@2x.png in Resources */,
+				DBD9CA3B1EDBE0E000636DB5 /* Login.JPG in Resources */,
+				DBD9CA6C1EDC252F00636DB5 /* icon-info.png in Resources */,
+				DBD9CA6E1EDC252F00636DB5 /* icon-success.png in Resources */,
+				DBD9CA6F1EDC252F00636DB5 /* icon-success@2x.png in Resources */,
+				DBD9CA5C1EDC033000636DB5 /* GoogleService-Info.plist in Resources */,
+				DBD9CA6B1EDC252F00636DB5 /* icon-error@2x.png in Resources */,
+				DBD9CA2E1EDBDDF600636DB5 /* LaunchScreen.storyboard in Resources */,
+				DBD9CA531EDBF2C200636DB5 /* tw_login.png in Resources */,
+				DBD9CA2B1EDBDDF600636DB5 /* Assets.xcassets in Resources */,
+				DBD9CA571EDBF4B500636DB5 /* tw_login2.png in Resources */,
+				DBD9CA521EDBF2C200636DB5 /* fb_login.png in Resources */,
+				DBD9CA291EDBDDF600636DB5 /* Main.storyboard in Resources */,
+				DBD9CA6A1EDC252F00636DB5 /* icon-error.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FA4625DF27410EAE49B37A2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YjiTalkToStranger/Pods-YjiTalkToStranger-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C5C156D06C155D19ED4A6C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		817430B07569F4AF987E572B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YjiTalkToStranger/Pods-YjiTalkToStranger-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DBD9CA1C1EDBDDF600636DB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBD9CA5A1EDC013200636DB5 /* ViewController.swift in Sources */,
+				DB7A2D511EDEBA96008998E1 /* YjiMapVc.swift in Sources */,
+				DBC1AEE81EDE6B1A007F8345 /* UIViewController+Animator.m in Sources */,
+				DBC1AEE91EDE6B1A007F8345 /* ZBFallenBricksAnimator.m in Sources */,
+				DB7A2D4F1EDEB7B2008998E1 /* YjiLocationManager.swift in Sources */,
+				DB7A2D551EDEBEBB008998E1 /* YjiRootVcManager.swift in Sources */,
+				DB7A2D4C1EDEAE36008998E1 /* YjiTabBarVc.swift in Sources */,
+				DBD9CA241EDBDDF600636DB5 /* AppDelegate.swift in Sources */,
+				DBC1AEF31EDE7EEA007F8345 /* YjiBaseVc.swift in Sources */,
+				DBC1AEEF1EDE713D007F8345 /* YjiUserInfoViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DBD9CA271EDBDDF600636DB5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBD9CA281EDBDDF600636DB5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DBD9CA2C1EDBDDF600636DB5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBD9CA2D1EDBDDF600636DB5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DBD9CA301EDBDDF600636DB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DBD9CA311EDBDDF600636DB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DBD9CA331EDBDDF600636DB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEA23A8B13A8DC563AF79E6D /* Pods-YjiTalkToStranger.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = VNBQ242BN8;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = YjiTalkToStranger/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Ericji.YjiTalkToStranger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YjiTalkToStranger/YjiTalkToStranger-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DBD9CA341EDBDDF600636DB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F66E92FABE81D4B15C8720D1 /* Pods-YjiTalkToStranger.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = VNBQ242BN8;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = YjiTalkToStranger/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Ericji.YjiTalkToStranger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YjiTalkToStranger/YjiTalkToStranger-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBD9CA1B1EDBDDF600636DB5 /* Build configuration list for PBXProject "YjiTalkToStranger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBD9CA301EDBDDF600636DB5 /* Debug */,
+				DBD9CA311EDBDDF600636DB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBD9CA321EDBDDF600636DB5 /* Build configuration list for PBXNativeTarget "YjiTalkToStranger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBD9CA331EDBDDF600636DB5 /* Debug */,
+				DBD9CA341EDBDDF600636DB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DBD9CA181EDBDDF600636DB5 /* Project object */;
+}
