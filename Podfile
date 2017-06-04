@@ -22,4 +22,5 @@ target 'YjiTalkToStranger' do
   pod 'FoldingTabBar'
   pod 'GoogleMaps'
   pod 'GooglePlaces'
+  pod 'TwitterKit'
 end

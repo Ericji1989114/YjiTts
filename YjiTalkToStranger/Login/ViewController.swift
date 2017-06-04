@@ -11,6 +11,7 @@ import FBSDKCoreKit
 import FBSDKLoginKit
 import FirebaseAuth
 import TWMessageBarManager
+import TwitterKit
 
 class ViewController: YjiBaseVc {
     
@@ -36,8 +37,7 @@ class ViewController: YjiBaseVc {
             FBSDKAccessToken.setCurrent(result.token)
             let dictInfo = ["fields" : "id,name"]
             let request = FBSDKGraphRequest(graphPath: "me", parameters: dictInfo)
-            request?.start(completionHandler: { (_, result, _) in
-                print(result as! [String : Any])
+            let _ = request?.start(completionHandler: { (_, _, _) in
                 let credential = FIRFacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
                 FIRAuth.auth()?.signIn(with: credential) { (user, error) in
                     // ...
@@ -46,16 +46,25 @@ class ViewController: YjiBaseVc {
 
                 }
             })
-            
         }
     }
 
-    @IBAction func anonymousLogin(_ sender: Any) {
-        FIRAuth.auth()?.signInAnonymously() { (user, error) in
-            // ...
-            let isAnonymous = user!.isAnonymous  // true
-        }
-        
+    @IBAction func onTapTwBtn(_ sender: Any) {
+        Twitter.sharedInstance().logIn(completion: { (session, error) in
+            guard let twInfo = session else {
+                print("error: \(String(describing: error?.localizedDescription))")
+                return
+            }
+            let authToken = twInfo.authToken
+            let authTokenSecret = twInfo.authTokenSecret
+            let credential = FIRTwitterAuthProvider.credential(withToken: authToken, secret: authTokenSecret)
+            FIRAuth.auth()?.signIn(with: credential) { (user, error) in
+                // ...
+                TWMessageBarManager.sharedInstance().showMessage(withTitle: "Account Created", description: "Your account was successfully created", type: .success)
+                self.navigationController?.pushViewController(UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "YjiUserInfoViewController"), animated: true)
+                
+            }
+        })
     }
 }
 

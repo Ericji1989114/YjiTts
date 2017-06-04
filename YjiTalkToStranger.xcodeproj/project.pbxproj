@@ -44,6 +44,7 @@
 		DB7A2D501EDEBA96008998E1 /* YjiMapVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YjiMapVc.swift; sourceTree = "<group>"; };
 		DB7A2D541EDEBEBB008998E1 /* YjiRootVcManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YjiRootVcManager.swift; sourceTree = "<group>"; };
 		DB7A2D561EDEC952008998E1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DBA8542F1EE3EAB8009475AF /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		DBC1AEC21EDE5F04007F8345 /* UserInfo_background.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = UserInfo_background.JPG; sourceTree = "<group>"; };
 		DBC1AEE41EDE6B1A007F8345 /* UIViewController+Animator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Animator.h"; sourceTree = "<group>"; };
 		DBC1AEE51EDE6B1A007F8345 /* UIViewController+Animator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Animator.m"; sourceTree = "<group>"; };
@@ -89,6 +90,7 @@
 		5919E210BC7A8BE0F7763FA5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DBA8542F1EE3EAB8009475AF /* SafariServices.framework */,
 				DB7A2D561EDEC952008998E1 /* CoreLocation.framework */,
 				8C65FF676536B03ACDFB78B0 /* Pods_YjiTalkToStranger.framework */,
 			);
