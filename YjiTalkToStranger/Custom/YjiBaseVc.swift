@@ -17,6 +17,9 @@ class YjiBaseVc: UIViewController, UINavigationControllerDelegate {
             return
         }
         navigationController.delegate = self
+        let tapViewGesture = UITapGestureRecognizer(target: self, action: #selector(YjiBaseVc.dismissKeyboard))
+        self.view.isUserInteractionEnabled = true
+        self.view.addGestureRecognizer(tapViewGesture)
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,6 +27,11 @@ class YjiBaseVc: UIViewController, UINavigationControllerDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    @objc private func dismissKeyboard() {
+        self.view.endEditing(true)
+    }
+    
+    // MARK: - Navigation Delegate
     public func navigationController(_ navigationController: UINavigationController,
                                      animationControllerFor operation: UINavigationControllerOperation,
                                      from fromVC: UIViewController,
@@ -32,6 +40,7 @@ class YjiBaseVc: UIViewController, UINavigationControllerDelegate {
         
     }
 
+    
     /*
     // MARK: - Navigation
 
