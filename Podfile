@@ -23,4 +23,5 @@ target 'YjiTalkToStranger' do
   pod 'GoogleMaps'
   pod 'GooglePlaces'
   pod 'TwitterKit'
+  pod 'TextFieldEffects'
 end

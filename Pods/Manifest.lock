@@ -76,6 +76,7 @@ PODS:
     - RxSwift (~> 3.3)
   - RxSwift (3.3.1)
   - SnapKit (3.2.0)
+  - TextFieldEffects (1.3.2)
   - TwitterCore (2.8.0):
     - Fabric
   - TwitterKit (2.8.1):
@@ -98,6 +99,7 @@ DEPENDENCIES:
   - RxCocoa (~> 3.0)
   - RxSwift (~> 3.0)
   - SnapKit
+  - TextFieldEffects
   - TwitterKit
   - TWMessageBarManager
 
@@ -127,10 +129,11 @@ SPEC CHECKSUMS:
   RxCocoa: 7dcb7a1860fc9cd0e23dae67ab105fc2916670b6
   RxSwift: 8fc9f2de6275a9101d518444e00bf32f1a42caac
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  TextFieldEffects: 9e5cce561ea39c75b86e9d3637601727a67e8b23
   TwitterCore: e959987be23c767004d29eb7fab8d85d8585a2e5
   TwitterKit: 3b6044a7320340326a4098f3e37aa1dbaeb94942
   TWMessageBarManager: fd84e7948ba7968a2b5d9454859135761214ec56
 
-PODFILE CHECKSUM: a1cdd2c0678ab94af879b6fbd7cf8eb7afc3e12c
+PODFILE CHECKSUM: 79714b982ceb79c337e9c75b2dfcdab63912c543
 
 COCOAPODS: 1.1.1

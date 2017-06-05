@@ -189,12 +189,52 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UserInfo_background.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="BIH-l9-ic5">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" placeholder="First Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tbr-9g-etq" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="20" y="70" width="335" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="pOk-GI-Beo"/>
+                                </constraints>
+                                <color key="textColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                        <color key="value" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" placeholder="Last Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pad-nq-NEX" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="20" y="170" width="335" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="UMg-cb-QcV"/>
+                                </constraints>
+                                <color key="textColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                        <color key="value" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Tbr-9g-etq" firstAttribute="top" secondItem="wyL-F7-1ty" secondAttribute="bottom" constant="50" id="4Sw-1q-Pxg"/>
                             <constraint firstItem="BIH-l9-ic5" firstAttribute="leading" secondItem="AZt-xo-EER" secondAttribute="leading" id="5pF-yh-Dcr"/>
+                            <constraint firstItem="pad-nq-NEX" firstAttribute="top" secondItem="Tbr-9g-etq" secondAttribute="bottom" constant="40" id="La8-jt-ozl"/>
+                            <constraint firstAttribute="trailing" secondItem="Tbr-9g-etq" secondAttribute="trailing" constant="20" id="NRL-4P-UEa"/>
                             <constraint firstAttribute="trailing" secondItem="BIH-l9-ic5" secondAttribute="trailing" id="RyQ-dN-KHw"/>
+                            <constraint firstAttribute="trailing" secondItem="pad-nq-NEX" secondAttribute="trailing" constant="20" id="SLY-cU-cvv"/>
+                            <constraint firstItem="Tbr-9g-etq" firstAttribute="leading" secondItem="AZt-xo-EER" secondAttribute="leading" constant="20" id="ZyV-9x-gbg"/>
                             <constraint firstItem="BIH-l9-ic5" firstAttribute="top" secondItem="AZt-xo-EER" secondAttribute="top" id="dzU-e2-xuZ"/>
+                            <constraint firstItem="pad-nq-NEX" firstAttribute="leading" secondItem="AZt-xo-EER" secondAttribute="leading" constant="20" id="uE2-4t-nLQ"/>
                             <constraint firstItem="5ob-yl-osM" firstAttribute="top" secondItem="BIH-l9-ic5" secondAttribute="bottom" id="xQg-zD-7V1"/>
                         </constraints>
                     </view>
@@ -278,7 +318,7 @@
     </scenes>
     <resources>
         <image name="Login.JPG" width="1080" height="1920"/>
-        <image name="UserInfo_background.JPG" width="1080" height="1920"/>
+        <image name="UserInfo_background.JPG" width="744" height="1324"/>
         <image name="fb_login.png" width="128" height="128"/>
         <image name="tw_login.png" width="128" height="128"/>
     </resources>

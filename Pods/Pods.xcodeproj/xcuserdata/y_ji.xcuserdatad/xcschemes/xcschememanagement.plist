@@ -104,25 +104,25 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>TextFieldEffects.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>07D064186DB297DB5066667738522567</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>08D951999A7A63EF4539915831565E45</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>107A9565F9DF88517DFD3E28C05B2B96</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>23EEF3C1D5525ED6D9D5A6414DD81BFA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>34969803D61F5D9973BF3579E470BE4E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -138,16 +138,6 @@
 			<true/>
 		</dict>
 		<key>44CAD6CE523055ED339E87154473A254</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>4C65FFE9AEEC295A596FB8E1F38A235C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5509DC1421D972E98F62F633858ECB5B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -172,12 +162,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A3EB554FDCED0948D70899A48E04809C</key>
+		<key>9BE0B76C2381776E385D66BA1D24934B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A595EB0F5D9DBBDCCFD40BD869E0B517</key>
+		<key>A3CED8958D49C7BC1671ECC1CA99375A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B8AE9898C990AC0047A9EB402AFB6227</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -187,7 +182,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>C281C8174A6295D08D346298638215CB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>C7DCF2B547F7871B9BFD74DE93B0E173</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CD5C2906084CCE681309AF88FAF2C4AF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -197,12 +202,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>D102660B1E0B7C1CD063C587D5D62A8A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>DDBCFDE490CDFDABF6F16A26F346932D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F3820792F7924B32CE5EBE2F0D8FD996</key>
+		<key>FBCA4AB14D5F96E516C2D29B6ED50D2B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
