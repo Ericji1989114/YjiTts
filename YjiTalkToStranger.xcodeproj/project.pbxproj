@@ -11,6 +11,7 @@
 		DB7A2D4F1EDEB7B2008998E1 /* YjiLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7A2D4E1EDEB7B2008998E1 /* YjiLocationManager.swift */; };
 		DB7A2D511EDEBA96008998E1 /* YjiMapVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7A2D501EDEBA96008998E1 /* YjiMapVc.swift */; };
 		DB7A2D551EDEBEBB008998E1 /* YjiRootVcManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7A2D541EDEBEBB008998E1 /* YjiRootVcManager.swift */; };
+		DBA854361EE50FA4009475AF /* YjiCommonFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA854351EE50FA4009475AF /* YjiCommonFunc.swift */; };
 		DBC1AEC31EDE5F04007F8345 /* UserInfo_background.JPG in Resources */ = {isa = PBXBuildFile; fileRef = DBC1AEC21EDE5F04007F8345 /* UserInfo_background.JPG */; };
 		DBC1AEE81EDE6B1A007F8345 /* UIViewController+Animator.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC1AEE51EDE6B1A007F8345 /* UIViewController+Animator.m */; };
 		DBC1AEE91EDE6B1A007F8345 /* ZBFallenBricksAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC1AEE71EDE6B1A007F8345 /* ZBFallenBricksAnimator.m */; };
@@ -45,6 +46,7 @@
 		DB7A2D541EDEBEBB008998E1 /* YjiRootVcManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YjiRootVcManager.swift; sourceTree = "<group>"; };
 		DB7A2D561EDEC952008998E1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		DBA8542F1EE3EAB8009475AF /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		DBA854351EE50FA4009475AF /* YjiCommonFunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YjiCommonFunc.swift; sourceTree = "<group>"; };
 		DBC1AEC21EDE5F04007F8345 /* UserInfo_background.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = UserInfo_background.JPG; sourceTree = "<group>"; };
 		DBC1AEE41EDE6B1A007F8345 /* UIViewController+Animator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Animator.h"; sourceTree = "<group>"; };
 		DBC1AEE51EDE6B1A007F8345 /* UIViewController+Animator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Animator.m"; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 				DBC1AEE31EDE6B1A007F8345 /* ZBCustomTransitions */,
 				DBC1AEF21EDE7EEA007F8345 /* YjiBaseVc.swift */,
 				DB7A2D541EDEBEBB008998E1 /* YjiRootVcManager.swift */,
+				DBA854351EE50FA4009475AF /* YjiCommonFunc.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				DBD9CA5A1EDC013200636DB5 /* ViewController.swift in Sources */,
 				DB7A2D511EDEBA96008998E1 /* YjiMapVc.swift in Sources */,
 				DBC1AEE81EDE6B1A007F8345 /* UIViewController+Animator.m in Sources */,
+				DBA854361EE50FA4009475AF /* YjiCommonFunc.swift in Sources */,
 				DBC1AEE91EDE6B1A007F8345 /* ZBFallenBricksAnimator.m in Sources */,
 				DB7A2D4F1EDEB7B2008998E1 /* YjiLocationManager.swift in Sources */,
 				DB7A2D551EDEBEBB008998E1 /* YjiRootVcManager.swift in Sources */,

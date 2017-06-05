@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C281C8174A6295D08D346298638215CB"
+               BlueprintIdentifier = "E65BFC37DB30D61EEF2D794571A95DB7"
                BuildableName = "Pods_YjiTalkToStranger.framework"
                BlueprintName = "Pods-YjiTalkToStranger"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C281C8174A6295D08D346298638215CB"
+            BlueprintIdentifier = "E65BFC37DB30D61EEF2D794571A95DB7"
             BuildableName = "Pods_YjiTalkToStranger.framework"
             BlueprintName = "Pods-YjiTalkToStranger"
             ReferencedContainer = "container:Pods.xcodeproj">

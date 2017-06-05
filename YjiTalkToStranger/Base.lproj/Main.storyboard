@@ -13,7 +13,7 @@
         <scene sceneID="24b-9S-FFr">
             <objects>
                 <navigationController id="V9a-h9-xMt" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kli-qa-PyR">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Kli-qa-PyR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -223,21 +223,39 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEQ-C8-sET">
+                                <rect key="frame" x="20" y="270" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="X0d-dE-zNc"/>
+                                </constraints>
+                                <state key="normal" title="Birthday">
+                                    <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTapBirthBtnWithBtn:" destination="Pwc-B8-uZM" eventType="touchUpInside" id="fmH-Yx-cD5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="BEQ-C8-sET" secondAttribute="trailing" constant="20" id="1hQ-0n-XDt"/>
                             <constraint firstItem="Tbr-9g-etq" firstAttribute="top" secondItem="wyL-F7-1ty" secondAttribute="bottom" constant="50" id="4Sw-1q-Pxg"/>
                             <constraint firstItem="BIH-l9-ic5" firstAttribute="leading" secondItem="AZt-xo-EER" secondAttribute="leading" id="5pF-yh-Dcr"/>
+                            <constraint firstItem="BEQ-C8-sET" firstAttribute="top" secondItem="pad-nq-NEX" secondAttribute="bottom" constant="40" id="IUI-0P-m0w"/>
                             <constraint firstItem="pad-nq-NEX" firstAttribute="top" secondItem="Tbr-9g-etq" secondAttribute="bottom" constant="40" id="La8-jt-ozl"/>
                             <constraint firstAttribute="trailing" secondItem="Tbr-9g-etq" secondAttribute="trailing" constant="20" id="NRL-4P-UEa"/>
                             <constraint firstAttribute="trailing" secondItem="BIH-l9-ic5" secondAttribute="trailing" id="RyQ-dN-KHw"/>
                             <constraint firstAttribute="trailing" secondItem="pad-nq-NEX" secondAttribute="trailing" constant="20" id="SLY-cU-cvv"/>
                             <constraint firstItem="Tbr-9g-etq" firstAttribute="leading" secondItem="AZt-xo-EER" secondAttribute="leading" constant="20" id="ZyV-9x-gbg"/>
                             <constraint firstItem="BIH-l9-ic5" firstAttribute="top" secondItem="AZt-xo-EER" secondAttribute="top" id="dzU-e2-xuZ"/>
+                            <constraint firstItem="BEQ-C8-sET" firstAttribute="leading" secondItem="AZt-xo-EER" secondAttribute="leading" constant="20" id="fcY-7B-Lf5"/>
                             <constraint firstItem="pad-nq-NEX" firstAttribute="leading" secondItem="AZt-xo-EER" secondAttribute="leading" constant="20" id="uE2-4t-nLQ"/>
                             <constraint firstItem="5ob-yl-osM" firstAttribute="top" secondItem="BIH-l9-ic5" secondAttribute="bottom" id="xQg-zD-7V1"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="birthBtn" destination="BEQ-C8-sET" id="mXe-yz-448"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZA8-bj-ia0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -248,7 +266,7 @@
             <objects>
                 <navigationController id="wk0-3M-wZD" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="9ju-dd-eIH"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bZr-bV-gdg">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="bZr-bV-gdg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -265,7 +283,7 @@
             <objects>
                 <navigationController id="UV6-m3-xyn" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="VvF-W4-AJV"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Knn-FS-bxg">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Knn-FS-bxg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
