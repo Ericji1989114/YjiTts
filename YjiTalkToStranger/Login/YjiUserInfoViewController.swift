@@ -10,7 +10,7 @@ import UIKit
 import TextFieldEffects
 import ActionSheetPicker_3_0
 
-class YjiUserInfoViewController: YjiBaseVc, UITextFieldDelegate {
+class YjiUserInfoViewController: YjiBaseVc, UITextFieldDelegate, UIViewControllerTransitioningDelegate {
     
     @IBOutlet weak var birthBtn: UIButton!
     private var birthUnixTime: TimeInterval? = 0
@@ -35,6 +35,23 @@ class YjiUserInfoViewController: YjiBaseVc, UITextFieldDelegate {
             
         }, origin: self.view)
         datepicker?.show()
+    }
+    
+    @IBAction func onTapOKBtn(btn: TKTransitionSubmitButton) {
+        btn.animate(1, completion: { () -> () in
+            let secondVC = UIViewController()
+            secondVC.transitioningDelegate = self
+            self.present(secondVC, animated: true, completion: nil)
+        })
+    }
+    
+    // MARK: UIViewControllerTransitioningDelegate
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return TKFadeInAnimator(transitionDuration: 0.5, startingAlpha: 0.8)
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return nil
     }
     
     /*

@@ -12,6 +12,11 @@
 		DB7A2D511EDEBA96008998E1 /* YjiMapVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7A2D501EDEBA96008998E1 /* YjiMapVc.swift */; };
 		DB7A2D551EDEBEBB008998E1 /* YjiRootVcManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7A2D541EDEBEBB008998E1 /* YjiRootVcManager.swift */; };
 		DBA854361EE50FA4009475AF /* YjiCommonFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA854351EE50FA4009475AF /* YjiCommonFunc.swift */; };
+		DBA8543E1EE56517009475AF /* CGRectEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA854391EE56517009475AF /* CGRectEx.swift */; };
+		DBA8543F1EE56517009475AF /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA8543A1EE56517009475AF /* FadeTransition.swift */; };
+		DBA854401EE56517009475AF /* SpinerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA8543B1EE56517009475AF /* SpinerLayer.swift */; };
+		DBA854411EE56517009475AF /* TimerEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA8543C1EE56517009475AF /* TimerEx.swift */; };
+		DBA854421EE56517009475AF /* TransitionSubmitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA8543D1EE56517009475AF /* TransitionSubmitButton.swift */; };
 		DBC1AEC31EDE5F04007F8345 /* UserInfo_background.JPG in Resources */ = {isa = PBXBuildFile; fileRef = DBC1AEC21EDE5F04007F8345 /* UserInfo_background.JPG */; };
 		DBC1AEE81EDE6B1A007F8345 /* UIViewController+Animator.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC1AEE51EDE6B1A007F8345 /* UIViewController+Animator.m */; };
 		DBC1AEE91EDE6B1A007F8345 /* ZBFallenBricksAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC1AEE71EDE6B1A007F8345 /* ZBFallenBricksAnimator.m */; };
@@ -47,6 +52,11 @@
 		DB7A2D561EDEC952008998E1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		DBA8542F1EE3EAB8009475AF /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		DBA854351EE50FA4009475AF /* YjiCommonFunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YjiCommonFunc.swift; sourceTree = "<group>"; };
+		DBA854391EE56517009475AF /* CGRectEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRectEx.swift; sourceTree = "<group>"; };
+		DBA8543A1EE56517009475AF /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
+		DBA8543B1EE56517009475AF /* SpinerLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinerLayer.swift; sourceTree = "<group>"; };
+		DBA8543C1EE56517009475AF /* TimerEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerEx.swift; sourceTree = "<group>"; };
+		DBA8543D1EE56517009475AF /* TransitionSubmitButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionSubmitButton.swift; sourceTree = "<group>"; };
 		DBC1AEC21EDE5F04007F8345 /* UserInfo_background.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = UserInfo_background.JPG; sourceTree = "<group>"; };
 		DBC1AEE41EDE6B1A007F8345 /* UIViewController+Animator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Animator.h"; sourceTree = "<group>"; };
 		DBC1AEE51EDE6B1A007F8345 /* UIViewController+Animator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Animator.m"; sourceTree = "<group>"; };
@@ -115,6 +125,18 @@
 				DB7A2D501EDEBA96008998E1 /* YjiMapVc.swift */,
 			);
 			path = Map;
+			sourceTree = "<group>";
+		};
+		DBA854381EE56517009475AF /* TKSubmitTransition */ = {
+			isa = PBXGroup;
+			children = (
+				DBA854391EE56517009475AF /* CGRectEx.swift */,
+				DBA8543A1EE56517009475AF /* FadeTransition.swift */,
+				DBA8543B1EE56517009475AF /* SpinerLayer.swift */,
+				DBA8543C1EE56517009475AF /* TimerEx.swift */,
+				DBA8543D1EE56517009475AF /* TransitionSubmitButton.swift */,
+			);
+			path = TKSubmitTransition;
 			sourceTree = "<group>";
 		};
 		DBC1AEE31EDE6B1A007F8345 /* ZBCustomTransitions */ = {
@@ -196,6 +218,7 @@
 		DBD9CA601EDC1F6400636DB5 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				DBA854381EE56517009475AF /* TKSubmitTransition */,
 				DBC1AEE31EDE6B1A007F8345 /* ZBCustomTransitions */,
 				DBC1AEF21EDE7EEA007F8345 /* YjiBaseVc.swift */,
 				DB7A2D541EDEBEBB008998E1 /* YjiRootVcManager.swift */,
@@ -352,14 +375,19 @@
 			files = (
 				DBD9CA5A1EDC013200636DB5 /* ViewController.swift in Sources */,
 				DB7A2D511EDEBA96008998E1 /* YjiMapVc.swift in Sources */,
+				DBA854421EE56517009475AF /* TransitionSubmitButton.swift in Sources */,
+				DBA854401EE56517009475AF /* SpinerLayer.swift in Sources */,
 				DBC1AEE81EDE6B1A007F8345 /* UIViewController+Animator.m in Sources */,
 				DBA854361EE50FA4009475AF /* YjiCommonFunc.swift in Sources */,
 				DBC1AEE91EDE6B1A007F8345 /* ZBFallenBricksAnimator.m in Sources */,
 				DB7A2D4F1EDEB7B2008998E1 /* YjiLocationManager.swift in Sources */,
 				DB7A2D551EDEBEBB008998E1 /* YjiRootVcManager.swift in Sources */,
 				DB7A2D4C1EDEAE36008998E1 /* YjiTabBarVc.swift in Sources */,
+				DBA854411EE56517009475AF /* TimerEx.swift in Sources */,
 				DBD9CA241EDBDDF600636DB5 /* AppDelegate.swift in Sources */,
 				DBC1AEF31EDE7EEA007F8345 /* YjiBaseVc.swift in Sources */,
+				DBA8543E1EE56517009475AF /* CGRectEx.swift in Sources */,
+				DBA8543F1EE56517009475AF /* FadeTransition.swift in Sources */,
 				DBC1AEEF1EDE713D007F8345 /* YjiUserInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

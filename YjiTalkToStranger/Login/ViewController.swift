@@ -66,5 +66,13 @@ class ViewController: YjiBaseVc {
             }
         })
     }
+    
+//    @IBAction func onTapButton(_ button: TKTransitionSubmitButton) {
+//        button.animate(1, completion: { () -> () in
+//            let secondVC = SecondViewController()
+//            secondVC.transitioningDelegate = self
+//            self.present(secondVC, animated: true, completion: nil)
+//        })
+//    }
 }
 
