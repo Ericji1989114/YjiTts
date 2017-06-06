@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D0E3092E47B095A2F74354C487A54596'
-               BlueprintName = 'TextFieldEffects'
+               BlueprintIdentifier = '6781484AACA274D8D41414AE3B594109'
+               BlueprintName = 'KLCPopup'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'TextFieldEffects.framework'>
+               BuildableName = 'KLCPopup.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

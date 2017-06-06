@@ -25,4 +25,5 @@ target 'YjiTalkToStranger' do
   pod 'TwitterKit'
   pod 'TextFieldEffects'
   pod 'ActionSheetPicker-3.0'
+  pod 'KLCPopup'
 end

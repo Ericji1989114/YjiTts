@@ -39,6 +39,10 @@
 		DBD9CA6D1EDC252F00636DB5 /* icon-info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBD9CA671EDC252F00636DB5 /* icon-info@2x.png */; };
 		DBD9CA6E1EDC252F00636DB5 /* icon-success.png in Resources */ = {isa = PBXBuildFile; fileRef = DBD9CA681EDC252F00636DB5 /* icon-success.png */; };
 		DBD9CA6F1EDC252F00636DB5 /* icon-success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBD9CA691EDC252F00636DB5 /* icon-success@2x.png */; };
+		DBE204F01EE6713200E74A42 /* avatar_default.png in Resources */ = {isa = PBXBuildFile; fileRef = DBE204EF1EE6713200E74A42 /* avatar_default.png */; };
+		DBE204F61EE6846200E74A42 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE204F51EE6846200E74A42 /* UIView+Additions.m */; };
+		DBE204F91EE690A900E74A42 /* select_album.png in Resources */ = {isa = PBXBuildFile; fileRef = DBE204F71EE690A900E74A42 /* select_album.png */; };
+		DBE204FA1EE690A900E74A42 /* take_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = DBE204F81EE690A900E74A42 /* take_photo.png */; };
 		FE5B43A49228993429F05841 /* Pods_YjiTalkToStranger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C65FF676536B03ACDFB78B0 /* Pods_YjiTalkToStranger.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +88,11 @@
 		DBD9CA671EDC252F00636DB5 /* icon-info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-info@2x.png"; sourceTree = "<group>"; };
 		DBD9CA681EDC252F00636DB5 /* icon-success.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-success.png"; sourceTree = "<group>"; };
 		DBD9CA691EDC252F00636DB5 /* icon-success@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-success@2x.png"; sourceTree = "<group>"; };
+		DBE204EF1EE6713200E74A42 /* avatar_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar_default.png; sourceTree = "<group>"; };
+		DBE204F41EE6846200E74A42 /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
+		DBE204F51EE6846200E74A42 /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
+		DBE204F71EE690A900E74A42 /* select_album.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = select_album.png; sourceTree = "<group>"; };
+		DBE204F81EE690A900E74A42 /* take_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = take_photo.png; sourceTree = "<group>"; };
 		F66E92FABE81D4B15C8720D1 /* Pods-YjiTalkToStranger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YjiTalkToStranger.release.xcconfig"; path = "Pods/Target Support Files/Pods-YjiTalkToStranger/Pods-YjiTalkToStranger.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -189,6 +198,9 @@
 		DBD9CA351EDBDF3700636DB5 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				DBE204F71EE690A900E74A42 /* select_album.png */,
+				DBE204F81EE690A900E74A42 /* take_photo.png */,
+				DBE204EF1EE6713200E74A42 /* avatar_default.png */,
 				DBC1AEC21EDE5F04007F8345 /* UserInfo_background.JPG */,
 				DBD9CA641EDC252F00636DB5 /* icon-error.png */,
 				DBD9CA651EDC252F00636DB5 /* icon-error@2x.png */,
@@ -218,6 +230,7 @@
 		DBD9CA601EDC1F6400636DB5 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				DBE204F31EE6846200E74A42 /* Extensions */,
 				DBA854381EE56517009475AF /* TKSubmitTransition */,
 				DBC1AEE31EDE6B1A007F8345 /* ZBCustomTransitions */,
 				DBC1AEF21EDE7EEA007F8345 /* YjiBaseVc.swift */,
@@ -225,6 +238,15 @@
 				DBA854351EE50FA4009475AF /* YjiCommonFunc.swift */,
 			);
 			path = Custom;
+			sourceTree = "<group>";
+		};
+		DBE204F31EE6846200E74A42 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DBE204F41EE6846200E74A42 /* UIView+Additions.h */,
+				DBE204F51EE6846200E74A42 /* UIView+Additions.m */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,13 +328,16 @@
 				DBD9CA6C1EDC252F00636DB5 /* icon-info.png in Resources */,
 				DBD9CA6E1EDC252F00636DB5 /* icon-success.png in Resources */,
 				DBD9CA6F1EDC252F00636DB5 /* icon-success@2x.png in Resources */,
+				DBE204F01EE6713200E74A42 /* avatar_default.png in Resources */,
 				DBD9CA5C1EDC033000636DB5 /* GoogleService-Info.plist in Resources */,
 				DBD9CA6B1EDC252F00636DB5 /* icon-error@2x.png in Resources */,
 				DBD9CA2E1EDBDDF600636DB5 /* LaunchScreen.storyboard in Resources */,
+				DBE204F91EE690A900E74A42 /* select_album.png in Resources */,
 				DBD9CA531EDBF2C200636DB5 /* tw_login.png in Resources */,
 				DBD9CA2B1EDBDDF600636DB5 /* Assets.xcassets in Resources */,
 				DBD9CA571EDBF4B500636DB5 /* tw_login2.png in Resources */,
 				DBD9CA521EDBF2C200636DB5 /* fb_login.png in Resources */,
+				DBE204FA1EE690A900E74A42 /* take_photo.png in Resources */,
 				DBD9CA291EDBDDF600636DB5 /* Main.storyboard in Resources */,
 				DBD9CA6A1EDC252F00636DB5 /* icon-error.png in Resources */,
 			);
@@ -373,6 +398,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBE204F61EE6846200E74A42 /* UIView+Additions.m in Sources */,
 				DBD9CA5A1EDC013200636DB5 /* ViewController.swift in Sources */,
 				DB7A2D511EDEBA96008998E1 /* YjiMapVc.swift in Sources */,
 				DBA854421EE56517009475AF /* TransitionSubmitButton.swift in Sources */,

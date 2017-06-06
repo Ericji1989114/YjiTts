@@ -13,7 +13,7 @@
         <scene sceneID="24b-9S-FFr">
             <objects>
                 <navigationController id="V9a-h9-xMt" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Kli-qa-PyR">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kli-qa-PyR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -189,25 +189,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UserInfo_background.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="BIH-l9-ic5">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" placeholder="First Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tbr-9g-etq" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                <rect key="frame" x="20" y="70" width="335" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="pOk-GI-Beo"/>
-                                </constraints>
-                                <color key="textColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
-                                        <color key="value" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                        <color key="value" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" placeholder="Last Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pad-nq-NEX" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                <rect key="frame" x="20" y="170" width="335" height="60"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" placeholder="Nick Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pad-nq-NEX" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="20" y="220" width="335" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="UMg-cb-QcV"/>
                                 </constraints>
@@ -224,7 +207,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEQ-C8-sET">
-                                <rect key="frame" x="20" y="290" width="335" height="40"/>
+                                <rect key="frame" x="20" y="340" width="335" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="X0d-dE-zNc"/>
                                 </constraints>
@@ -254,25 +237,35 @@
                                     <action selector="onTapOKBtnWithBtn:" destination="Pwc-B8-uZM" eventType="touchUpInside" id="JZa-xk-emp"/>
                                 </connections>
                             </button>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_default.png" translatesAutoresizingMaskIntoConstraints="NO" id="J4P-k2-2WF">
+                                <rect key="frame" x="137" y="70" width="100" height="100"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="I9K-W6-M9r"/>
+                                    <constraint firstAttribute="width" constant="100" id="pbO-FF-thS"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Kcy-FB-UMS" appends="YES" id="eIa-43-DuT"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="BEQ-C8-sET" secondAttribute="trailing" constant="20" id="1hQ-0n-XDt"/>
-                            <constraint firstItem="Tbr-9g-etq" firstAttribute="top" secondItem="wyL-F7-1ty" secondAttribute="bottom" constant="50" id="4Sw-1q-Pxg"/>
                             <constraint firstItem="BIH-l9-ic5" firstAttribute="leading" secondItem="AZt-xo-EER" secondAttribute="leading" id="5pF-yh-Dcr"/>
+                            <constraint firstItem="J4P-k2-2WF" firstAttribute="centerX" secondItem="AZt-xo-EER" secondAttribute="centerX" id="F1R-PC-b98"/>
                             <constraint firstItem="BEQ-C8-sET" firstAttribute="top" secondItem="pad-nq-NEX" secondAttribute="bottom" constant="60" id="IUI-0P-m0w"/>
-                            <constraint firstItem="pad-nq-NEX" firstAttribute="top" secondItem="Tbr-9g-etq" secondAttribute="bottom" constant="40" id="La8-jt-ozl"/>
                             <constraint firstItem="5ob-yl-osM" firstAttribute="top" secondItem="mA0-4d-H8w" secondAttribute="bottom" constant="60" id="MG6-qu-VPV"/>
-                            <constraint firstAttribute="trailing" secondItem="Tbr-9g-etq" secondAttribute="trailing" constant="20" id="NRL-4P-UEa"/>
                             <constraint firstAttribute="trailing" secondItem="BIH-l9-ic5" secondAttribute="trailing" id="RyQ-dN-KHw"/>
                             <constraint firstAttribute="trailing" secondItem="pad-nq-NEX" secondAttribute="trailing" constant="20" id="SLY-cU-cvv"/>
                             <constraint firstAttribute="trailing" secondItem="mA0-4d-H8w" secondAttribute="trailing" constant="50" id="Ysf-1j-SzP"/>
-                            <constraint firstItem="Tbr-9g-etq" firstAttribute="leading" secondItem="AZt-xo-EER" secondAttribute="leading" constant="20" id="ZyV-9x-gbg"/>
                             <constraint firstItem="BIH-l9-ic5" firstAttribute="top" secondItem="AZt-xo-EER" secondAttribute="top" id="dzU-e2-xuZ"/>
                             <constraint firstItem="BEQ-C8-sET" firstAttribute="leading" secondItem="AZt-xo-EER" secondAttribute="leading" constant="20" id="fcY-7B-Lf5"/>
                             <constraint firstItem="mA0-4d-H8w" firstAttribute="leading" secondItem="AZt-xo-EER" secondAttribute="leading" constant="50" id="fvQ-mG-4WE"/>
+                            <constraint firstItem="J4P-k2-2WF" firstAttribute="top" secondItem="wyL-F7-1ty" secondAttribute="bottom" constant="50" id="qOj-iO-DLh"/>
                             <constraint firstItem="pad-nq-NEX" firstAttribute="leading" secondItem="AZt-xo-EER" secondAttribute="leading" constant="20" id="uE2-4t-nLQ"/>
                             <constraint firstItem="5ob-yl-osM" firstAttribute="top" secondItem="BIH-l9-ic5" secondAttribute="bottom" id="xQg-zD-7V1"/>
+                            <constraint firstItem="pad-nq-NEX" firstAttribute="top" secondItem="J4P-k2-2WF" secondAttribute="bottom" constant="50" id="ziT-gd-WXM"/>
                         </constraints>
                     </view>
                     <connections>
@@ -280,6 +273,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZA8-bj-ia0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Kcy-FB-UMS">
+                    <connections>
+                        <action selector="onTapAvatarSetting:" destination="Pwc-B8-uZM" id="bG6-zx-Huv"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="204" y="22.938530734632685"/>
         </scene>
@@ -288,7 +286,7 @@
             <objects>
                 <navigationController id="wk0-3M-wZD" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="9ju-dd-eIH"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="bZr-bV-gdg">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bZr-bV-gdg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -305,7 +303,7 @@
             <objects>
                 <navigationController id="UV6-m3-xyn" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="VvF-W4-AJV"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Knn-FS-bxg">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Knn-FS-bxg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -359,6 +357,7 @@
     <resources>
         <image name="Login.JPG" width="1080" height="1920"/>
         <image name="UserInfo_background.JPG" width="744" height="1324"/>
+        <image name="avatar_default.png" width="234" height="234"/>
         <image name="fb_login.png" width="128" height="128"/>
         <image name="tw_login.png" width="128" height="128"/>
     </resources>
