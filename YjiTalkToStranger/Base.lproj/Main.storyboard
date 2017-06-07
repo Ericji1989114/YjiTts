@@ -13,7 +13,7 @@
         <scene sceneID="24b-9S-FFr">
             <objects>
                 <navigationController id="V9a-h9-xMt" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kli-qa-PyR">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Kli-qa-PyR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -237,13 +237,19 @@
                                     <action selector="onTapOKBtnWithBtn:" destination="Pwc-B8-uZM" eventType="touchUpInside" id="JZa-xk-emp"/>
                                 </connections>
                             </button>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_default.png" translatesAutoresizingMaskIntoConstraints="NO" id="J4P-k2-2WF">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_default.png" translatesAutoresizingMaskIntoConstraints="NO" id="J4P-k2-2WF">
                                 <rect key="frame" x="137" y="70" width="100" height="100"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="I9K-W6-M9r"/>
                                     <constraint firstAttribute="width" constant="100" id="pbO-FF-thS"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="Kcy-FB-UMS" appends="YES" id="eIa-43-DuT"/>
                                 </connections>
@@ -270,6 +276,7 @@
                     </view>
                     <connections>
                         <outlet property="birthBtn" destination="BEQ-C8-sET" id="mXe-yz-448"/>
+                        <outlet property="userAvatar" destination="J4P-k2-2WF" id="ueG-km-lY3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZA8-bj-ia0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -286,7 +293,7 @@
             <objects>
                 <navigationController id="wk0-3M-wZD" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="9ju-dd-eIH"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bZr-bV-gdg">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="bZr-bV-gdg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -303,7 +310,7 @@
             <objects>
                 <navigationController id="UV6-m3-xyn" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="VvF-W4-AJV"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Knn-FS-bxg">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Knn-FS-bxg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

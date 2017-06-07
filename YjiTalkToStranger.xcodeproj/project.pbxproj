@@ -11,6 +11,38 @@
 		DB7A2D4F1EDEB7B2008998E1 /* YjiLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7A2D4E1EDEB7B2008998E1 /* YjiLocationManager.swift */; };
 		DB7A2D511EDEBA96008998E1 /* YjiMapVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7A2D501EDEBA96008998E1 /* YjiMapVc.swift */; };
 		DB7A2D551EDEBEBB008998E1 /* YjiRootVcManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7A2D541EDEBEBB008998E1 /* YjiRootVcManager.swift */; };
+		DB90C4D31EE7C25200107476 /* AssetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4AE1EE7C25200107476 /* AssetManager.swift */; };
+		DB90C4D41EE7C25200107476 /* BottomContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4B01EE7C25200107476 /* BottomContainerView.swift */; };
+		DB90C4D51EE7C25200107476 /* ButtonPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4B11EE7C25200107476 /* ButtonPicker.swift */; };
+		DB90C4D61EE7C25200107476 /* ImageStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4B21EE7C25200107476 /* ImageStack.swift */; };
+		DB90C4D71EE7C25200107476 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4B31EE7C25200107476 /* StackView.swift */; };
+		DB90C4D81EE7C25200107476 /* CameraMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4B51EE7C25200107476 /* CameraMan.swift */; };
+		DB90C4D91EE7C25200107476 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4B61EE7C25200107476 /* CameraView.swift */; };
+		DB90C4DA1EE7C25200107476 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4B71EE7C25200107476 /* Configuration.swift */; };
+		DB90C4DB1EE7C25200107476 /* ConstraintsSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4B91EE7C25200107476 /* ConstraintsSetup.swift */; };
+		DB90C4DC1EE7C25200107476 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4BA1EE7C25200107476 /* Helper.swift */; };
+		DB90C4DD1EE7C25200107476 /* ImageGalleryLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4BC1EE7C25200107476 /* ImageGalleryLayout.swift */; };
+		DB90C4DE1EE7C25200107476 /* ImageGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4BD1EE7C25200107476 /* ImageGalleryView.swift */; };
+		DB90C4DF1EE7C25200107476 /* ImageGalleryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4BE1EE7C25200107476 /* ImageGalleryViewCell.swift */; };
+		DB90C4E01EE7C25200107476 /* ImageGalleryViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4BF1EE7C25200107476 /* ImageGalleryViewDataSource.swift */; };
+		DB90C4E11EE7C25200107476 /* ImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4C01EE7C25200107476 /* ImagePickerController.swift */; };
+		DB90C4E21EE7C25200107476 /* LightboxAssetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4C21EE7C25200107476 /* LightboxAssetManager.swift */; };
+		DB90C4E31EE7C25200107476 /* LayoutConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4C41EE7C25200107476 /* LayoutConfigurable.swift */; };
+		DB90C4E41EE7C25200107476 /* LightboxTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4C51EE7C25200107476 /* LightboxTransition.swift */; };
+		DB90C4E51EE7C25200107476 /* UIView+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4C61EE7C25200107476 /* UIView+Gradient.swift */; };
+		DB90C4E61EE7C25200107476 /* LightboxConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4C71EE7C25200107476 /* LightboxConfig.swift */; };
+		DB90C4E71EE7C25200107476 /* LightboxController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4C81EE7C25200107476 /* LightboxController.swift */; };
+		DB90C4E81EE7C25200107476 /* LightboxImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4C91EE7C25200107476 /* LightboxImage.swift */; };
+		DB90C4E91EE7C25200107476 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4CB1EE7C25200107476 /* FooterView.swift */; };
+		DB90C4EA1EE7C25200107476 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4CC1EE7C25200107476 /* HeaderView.swift */; };
+		DB90C4EB1EE7C25200107476 /* InfoLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4CD1EE7C25200107476 /* InfoLabel.swift */; };
+		DB90C4EC1EE7C25200107476 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4CE1EE7C25200107476 /* LoadingIndicator.swift */; };
+		DB90C4ED1EE7C25200107476 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4CF1EE7C25200107476 /* PageView.swift */; };
+		DB90C4EE1EE7C25200107476 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4D01EE7C25200107476 /* LocationManager.swift */; };
+		DB90C4EF1EE7C25200107476 /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4D21EE7C25200107476 /* TopView.swift */; };
+		DB90C4F31EE7C3A700107476 /* UIColor+Hue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4F11EE7C3A700107476 /* UIColor+Hue.swift */; };
+		DB90C4F41EE7C3A700107476 /* UIImage+Hue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4F21EE7C3A700107476 /* UIImage+Hue.swift */; };
+		DB90C4F71EE7C82800107476 /* UIImageView+FaceAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4F61EE7C82800107476 /* UIImageView+FaceAware.swift */; };
 		DBA854361EE50FA4009475AF /* YjiCommonFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA854351EE50FA4009475AF /* YjiCommonFunc.swift */; };
 		DBA8543E1EE56517009475AF /* CGRectEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA854391EE56517009475AF /* CGRectEx.swift */; };
 		DBA8543F1EE56517009475AF /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA8543A1EE56517009475AF /* FadeTransition.swift */; };
@@ -54,6 +86,38 @@
 		DB7A2D501EDEBA96008998E1 /* YjiMapVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YjiMapVc.swift; sourceTree = "<group>"; };
 		DB7A2D541EDEBEBB008998E1 /* YjiRootVcManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YjiRootVcManager.swift; sourceTree = "<group>"; };
 		DB7A2D561EDEC952008998E1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DB90C4AE1EE7C25200107476 /* AssetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetManager.swift; sourceTree = "<group>"; };
+		DB90C4B01EE7C25200107476 /* BottomContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomContainerView.swift; sourceTree = "<group>"; };
+		DB90C4B11EE7C25200107476 /* ButtonPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonPicker.swift; sourceTree = "<group>"; };
+		DB90C4B21EE7C25200107476 /* ImageStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageStack.swift; sourceTree = "<group>"; };
+		DB90C4B31EE7C25200107476 /* StackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
+		DB90C4B51EE7C25200107476 /* CameraMan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraMan.swift; sourceTree = "<group>"; };
+		DB90C4B61EE7C25200107476 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		DB90C4B71EE7C25200107476 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		DB90C4B91EE7C25200107476 /* ConstraintsSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintsSetup.swift; sourceTree = "<group>"; };
+		DB90C4BA1EE7C25200107476 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		DB90C4BC1EE7C25200107476 /* ImageGalleryLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageGalleryLayout.swift; sourceTree = "<group>"; };
+		DB90C4BD1EE7C25200107476 /* ImageGalleryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageGalleryView.swift; sourceTree = "<group>"; };
+		DB90C4BE1EE7C25200107476 /* ImageGalleryViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageGalleryViewCell.swift; sourceTree = "<group>"; };
+		DB90C4BF1EE7C25200107476 /* ImageGalleryViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageGalleryViewDataSource.swift; sourceTree = "<group>"; };
+		DB90C4C01EE7C25200107476 /* ImagePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerController.swift; sourceTree = "<group>"; };
+		DB90C4C21EE7C25200107476 /* LightboxAssetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightboxAssetManager.swift; sourceTree = "<group>"; };
+		DB90C4C41EE7C25200107476 /* LayoutConfigurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConfigurable.swift; sourceTree = "<group>"; };
+		DB90C4C51EE7C25200107476 /* LightboxTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightboxTransition.swift; sourceTree = "<group>"; };
+		DB90C4C61EE7C25200107476 /* UIView+Gradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Gradient.swift"; sourceTree = "<group>"; };
+		DB90C4C71EE7C25200107476 /* LightboxConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightboxConfig.swift; sourceTree = "<group>"; };
+		DB90C4C81EE7C25200107476 /* LightboxController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightboxController.swift; sourceTree = "<group>"; };
+		DB90C4C91EE7C25200107476 /* LightboxImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightboxImage.swift; sourceTree = "<group>"; };
+		DB90C4CB1EE7C25200107476 /* FooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		DB90C4CC1EE7C25200107476 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		DB90C4CD1EE7C25200107476 /* InfoLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoLabel.swift; sourceTree = "<group>"; };
+		DB90C4CE1EE7C25200107476 /* LoadingIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
+		DB90C4CF1EE7C25200107476 /* PageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		DB90C4D01EE7C25200107476 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		DB90C4D21EE7C25200107476 /* TopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
+		DB90C4F11EE7C3A700107476 /* UIColor+Hue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hue.swift"; sourceTree = "<group>"; };
+		DB90C4F21EE7C3A700107476 /* UIImage+Hue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Hue.swift"; sourceTree = "<group>"; };
+		DB90C4F61EE7C82800107476 /* UIImageView+FaceAware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+FaceAware.swift"; sourceTree = "<group>"; };
 		DBA8542F1EE3EAB8009475AF /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		DBA854351EE50FA4009475AF /* YjiCommonFunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YjiCommonFunc.swift; sourceTree = "<group>"; };
 		DBA854391EE56517009475AF /* CGRectEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRectEx.swift; sourceTree = "<group>"; };
@@ -134,6 +198,125 @@
 				DB7A2D501EDEBA96008998E1 /* YjiMapVc.swift */,
 			);
 			path = Map;
+			sourceTree = "<group>";
+		};
+		DB90C4AD1EE7C25200107476 /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				DB90C4F51EE7C82800107476 /* FaceAware */,
+				DB90C4F01EE7C3A700107476 /* Hue */,
+				DB90C4AE1EE7C25200107476 /* AssetManager.swift */,
+				DB90C4AF1EE7C25200107476 /* BottomView */,
+				DB90C4B41EE7C25200107476 /* CameraView */,
+				DB90C4B71EE7C25200107476 /* Configuration.swift */,
+				DB90C4B81EE7C25200107476 /* Extensions */,
+				DB90C4BA1EE7C25200107476 /* Helper.swift */,
+				DB90C4BB1EE7C25200107476 /* ImageGallery */,
+				DB90C4C01EE7C25200107476 /* ImagePickerController.swift */,
+				DB90C4C11EE7C25200107476 /* Lightbox */,
+				DB90C4D01EE7C25200107476 /* LocationManager.swift */,
+				DB90C4D11EE7C25200107476 /* TopView */,
+			);
+			path = ImagePicker;
+			sourceTree = "<group>";
+		};
+		DB90C4AF1EE7C25200107476 /* BottomView */ = {
+			isa = PBXGroup;
+			children = (
+				DB90C4B01EE7C25200107476 /* BottomContainerView.swift */,
+				DB90C4B11EE7C25200107476 /* ButtonPicker.swift */,
+				DB90C4B21EE7C25200107476 /* ImageStack.swift */,
+				DB90C4B31EE7C25200107476 /* StackView.swift */,
+			);
+			path = BottomView;
+			sourceTree = "<group>";
+		};
+		DB90C4B41EE7C25200107476 /* CameraView */ = {
+			isa = PBXGroup;
+			children = (
+				DB90C4B51EE7C25200107476 /* CameraMan.swift */,
+				DB90C4B61EE7C25200107476 /* CameraView.swift */,
+			);
+			path = CameraView;
+			sourceTree = "<group>";
+		};
+		DB90C4B81EE7C25200107476 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DB90C4B91EE7C25200107476 /* ConstraintsSetup.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DB90C4BB1EE7C25200107476 /* ImageGallery */ = {
+			isa = PBXGroup;
+			children = (
+				DB90C4BC1EE7C25200107476 /* ImageGalleryLayout.swift */,
+				DB90C4BD1EE7C25200107476 /* ImageGalleryView.swift */,
+				DB90C4BE1EE7C25200107476 /* ImageGalleryViewCell.swift */,
+				DB90C4BF1EE7C25200107476 /* ImageGalleryViewDataSource.swift */,
+			);
+			path = ImageGallery;
+			sourceTree = "<group>";
+		};
+		DB90C4C11EE7C25200107476 /* Lightbox */ = {
+			isa = PBXGroup;
+			children = (
+				DB90C4C21EE7C25200107476 /* LightboxAssetManager.swift */,
+				DB90C4C31EE7C25200107476 /* Library */,
+				DB90C4C71EE7C25200107476 /* LightboxConfig.swift */,
+				DB90C4C81EE7C25200107476 /* LightboxController.swift */,
+				DB90C4C91EE7C25200107476 /* LightboxImage.swift */,
+				DB90C4CA1EE7C25200107476 /* Views */,
+			);
+			path = Lightbox;
+			sourceTree = "<group>";
+		};
+		DB90C4C31EE7C25200107476 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				DB90C4C41EE7C25200107476 /* LayoutConfigurable.swift */,
+				DB90C4C51EE7C25200107476 /* LightboxTransition.swift */,
+				DB90C4C61EE7C25200107476 /* UIView+Gradient.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		DB90C4CA1EE7C25200107476 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DB90C4CB1EE7C25200107476 /* FooterView.swift */,
+				DB90C4CC1EE7C25200107476 /* HeaderView.swift */,
+				DB90C4CD1EE7C25200107476 /* InfoLabel.swift */,
+				DB90C4CE1EE7C25200107476 /* LoadingIndicator.swift */,
+				DB90C4CF1EE7C25200107476 /* PageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DB90C4D11EE7C25200107476 /* TopView */ = {
+			isa = PBXGroup;
+			children = (
+				DB90C4D21EE7C25200107476 /* TopView.swift */,
+			);
+			path = TopView;
+			sourceTree = "<group>";
+		};
+		DB90C4F01EE7C3A700107476 /* Hue */ = {
+			isa = PBXGroup;
+			children = (
+				DB90C4F11EE7C3A700107476 /* UIColor+Hue.swift */,
+				DB90C4F21EE7C3A700107476 /* UIImage+Hue.swift */,
+			);
+			path = Hue;
+			sourceTree = "<group>";
+		};
+		DB90C4F51EE7C82800107476 /* FaceAware */ = {
+			isa = PBXGroup;
+			children = (
+				DB90C4F61EE7C82800107476 /* UIImageView+FaceAware.swift */,
+			);
+			path = FaceAware;
 			sourceTree = "<group>";
 		};
 		DBA854381EE56517009475AF /* TKSubmitTransition */ = {
@@ -230,6 +413,7 @@
 		DBD9CA601EDC1F6400636DB5 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				DB90C4AD1EE7C25200107476 /* ImagePicker */,
 				DBE204F31EE6846200E74A42 /* Extensions */,
 				DBA854381EE56517009475AF /* TKSubmitTransition */,
 				DBC1AEE31EDE6B1A007F8345 /* ZBCustomTransitions */,
@@ -398,23 +582,55 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB90C4E31EE7C25200107476 /* LayoutConfigurable.swift in Sources */,
+				DB90C4DB1EE7C25200107476 /* ConstraintsSetup.swift in Sources */,
+				DB90C4E71EE7C25200107476 /* LightboxController.swift in Sources */,
+				DB90C4DF1EE7C25200107476 /* ImageGalleryViewCell.swift in Sources */,
 				DBE204F61EE6846200E74A42 /* UIView+Additions.m in Sources */,
+				DB90C4D71EE7C25200107476 /* StackView.swift in Sources */,
 				DBD9CA5A1EDC013200636DB5 /* ViewController.swift in Sources */,
+				DB90C4DD1EE7C25200107476 /* ImageGalleryLayout.swift in Sources */,
 				DB7A2D511EDEBA96008998E1 /* YjiMapVc.swift in Sources */,
+				DB90C4F31EE7C3A700107476 /* UIColor+Hue.swift in Sources */,
+				DB90C4E41EE7C25200107476 /* LightboxTransition.swift in Sources */,
+				DB90C4DC1EE7C25200107476 /* Helper.swift in Sources */,
+				DB90C4E51EE7C25200107476 /* UIView+Gradient.swift in Sources */,
 				DBA854421EE56517009475AF /* TransitionSubmitButton.swift in Sources */,
+				DB90C4E91EE7C25200107476 /* FooterView.swift in Sources */,
 				DBA854401EE56517009475AF /* SpinerLayer.swift in Sources */,
+				DB90C4E21EE7C25200107476 /* LightboxAssetManager.swift in Sources */,
 				DBC1AEE81EDE6B1A007F8345 /* UIViewController+Animator.m in Sources */,
+				DB90C4EE1EE7C25200107476 /* LocationManager.swift in Sources */,
+				DB90C4D41EE7C25200107476 /* BottomContainerView.swift in Sources */,
 				DBA854361EE50FA4009475AF /* YjiCommonFunc.swift in Sources */,
 				DBC1AEE91EDE6B1A007F8345 /* ZBFallenBricksAnimator.m in Sources */,
+				DB90C4E61EE7C25200107476 /* LightboxConfig.swift in Sources */,
 				DB7A2D4F1EDEB7B2008998E1 /* YjiLocationManager.swift in Sources */,
+				DB90C4DA1EE7C25200107476 /* Configuration.swift in Sources */,
 				DB7A2D551EDEBEBB008998E1 /* YjiRootVcManager.swift in Sources */,
+				DB90C4EB1EE7C25200107476 /* InfoLabel.swift in Sources */,
+				DB90C4D61EE7C25200107476 /* ImageStack.swift in Sources */,
+				DB90C4D51EE7C25200107476 /* ButtonPicker.swift in Sources */,
+				DB90C4D81EE7C25200107476 /* CameraMan.swift in Sources */,
+				DB90C4D91EE7C25200107476 /* CameraView.swift in Sources */,
+				DB90C4EF1EE7C25200107476 /* TopView.swift in Sources */,
 				DB7A2D4C1EDEAE36008998E1 /* YjiTabBarVc.swift in Sources */,
 				DBA854411EE56517009475AF /* TimerEx.swift in Sources */,
 				DBD9CA241EDBDDF600636DB5 /* AppDelegate.swift in Sources */,
 				DBC1AEF31EDE7EEA007F8345 /* YjiBaseVc.swift in Sources */,
 				DBA8543E1EE56517009475AF /* CGRectEx.swift in Sources */,
+				DB90C4EA1EE7C25200107476 /* HeaderView.swift in Sources */,
 				DBA8543F1EE56517009475AF /* FadeTransition.swift in Sources */,
+				DB90C4E11EE7C25200107476 /* ImagePickerController.swift in Sources */,
+				DB90C4E81EE7C25200107476 /* LightboxImage.swift in Sources */,
+				DB90C4D31EE7C25200107476 /* AssetManager.swift in Sources */,
+				DB90C4F41EE7C3A700107476 /* UIImage+Hue.swift in Sources */,
+				DB90C4EC1EE7C25200107476 /* LoadingIndicator.swift in Sources */,
 				DBC1AEEF1EDE713D007F8345 /* YjiUserInfoViewController.swift in Sources */,
+				DB90C4ED1EE7C25200107476 /* PageView.swift in Sources */,
+				DB90C4E01EE7C25200107476 /* ImageGalleryViewDataSource.swift in Sources */,
+				DB90C4DE1EE7C25200107476 /* ImageGalleryView.swift in Sources */,
+				DB90C4F71EE7C82800107476 /* UIImageView+FaceAware.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

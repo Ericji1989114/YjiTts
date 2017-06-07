@@ -10,8 +10,9 @@ import UIKit
 import TextFieldEffects
 import ActionSheetPicker_3_0
 
-class YjiUserInfoViewController: YjiBaseVc, UITextFieldDelegate, UIViewControllerTransitioningDelegate {
+class YjiUserInfoViewController: YjiBaseVc, UITextFieldDelegate, UIViewControllerTransitioningDelegate, ImagePickerDelegate {
     
+    @IBOutlet weak var userAvatar: UIImageView!
     @IBOutlet weak var birthBtn: UIButton!
     private var birthUnixTime: TimeInterval? = 0
 
@@ -46,7 +47,34 @@ class YjiUserInfoViewController: YjiBaseVc, UITextFieldDelegate, UIViewControlle
     }
     
     @IBAction func onTapAvatarSetting(_ sender: UITapGestureRecognizer) {
-        
+        var config = Configuration()
+        config.doneButtonTitle = "Finish"
+        config.noImagesTitle = "Sorry! There are no images here!"
+        config.recordLocation = false
+        config.allowMultiplePhotoSelection = false
+        let imagePickerController = ImagePickerController(configuration: config)
+        imagePickerController.imageLimit = 1
+        imagePickerController.delegate = self
+        present(imagePickerController, animated: true, completion: nil)
+    }
+    
+    // MARK: ImagePickerDelegate
+    func doneButtonDidPress(_ imagePicker: ImagePickerController, images: [UIImage]) {
+        imagePicker.dismiss(animated: true, completion: nil)
+        userAvatar.set(image: images[0], focusOnFaces: true)
+    }
+    
+    func cancelButtonDidPress(_ imagePicker: ImagePickerController) {
+        imagePicker.dismiss(animated: true, completion: nil)
+    }
+    
+    func wrapperDidPress(_ imagePicker: ImagePickerController, images: [UIImage]) {
+        guard images.count > 0 else { return }
+        let lightboxImages = images.map {
+            return LightboxImage(image: $0)
+        }
+        let lightbox = LightboxController(images: lightboxImages, startIndex: 0)
+        imagePicker.present(lightbox, animated: true, completion: nil)
     }
     
     // MARK: UIViewControllerTransitioningDelegate
