@@ -43,6 +43,7 @@
 		DB90C4F31EE7C3A700107476 /* UIColor+Hue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4F11EE7C3A700107476 /* UIColor+Hue.swift */; };
 		DB90C4F41EE7C3A700107476 /* UIImage+Hue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4F21EE7C3A700107476 /* UIImage+Hue.swift */; };
 		DB90C4F71EE7C82800107476 /* UIImageView+FaceAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4F61EE7C82800107476 /* UIImageView+FaceAware.swift */; };
+		DB90C4FA1EE7D37C00107476 /* YjiAuthMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4F91EE7D37C00107476 /* YjiAuthMonitor.swift */; };
 		DBA854361EE50FA4009475AF /* YjiCommonFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA854351EE50FA4009475AF /* YjiCommonFunc.swift */; };
 		DBA8543E1EE56517009475AF /* CGRectEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA854391EE56517009475AF /* CGRectEx.swift */; };
 		DBA8543F1EE56517009475AF /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA8543A1EE56517009475AF /* FadeTransition.swift */; };
@@ -118,6 +119,7 @@
 		DB90C4F11EE7C3A700107476 /* UIColor+Hue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hue.swift"; sourceTree = "<group>"; };
 		DB90C4F21EE7C3A700107476 /* UIImage+Hue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Hue.swift"; sourceTree = "<group>"; };
 		DB90C4F61EE7C82800107476 /* UIImageView+FaceAware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+FaceAware.swift"; sourceTree = "<group>"; };
+		DB90C4F91EE7D37C00107476 /* YjiAuthMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YjiAuthMonitor.swift; sourceTree = "<group>"; };
 		DBA8542F1EE3EAB8009475AF /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		DBA854351EE50FA4009475AF /* YjiCommonFunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YjiCommonFunc.swift; sourceTree = "<group>"; };
 		DBA854391EE56517009475AF /* CGRectEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRectEx.swift; sourceTree = "<group>"; };
@@ -406,6 +408,7 @@
 				DBD9CA591EDC013200636DB5 /* ViewController.swift */,
 				DBC1AEEE1EDE713D007F8345 /* YjiUserInfoViewController.swift */,
 				DB7A2D4B1EDEAE36008998E1 /* YjiTabBarVc.swift */,
+				DB90C4F91EE7D37C00107476 /* YjiAuthMonitor.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -589,6 +592,7 @@
 				DBE204F61EE6846200E74A42 /* UIView+Additions.m in Sources */,
 				DB90C4D71EE7C25200107476 /* StackView.swift in Sources */,
 				DBD9CA5A1EDC013200636DB5 /* ViewController.swift in Sources */,
+				DB90C4FA1EE7D37C00107476 /* YjiAuthMonitor.swift in Sources */,
 				DB90C4DD1EE7C25200107476 /* ImageGalleryLayout.swift in Sources */,
 				DB7A2D511EDEBA96008998E1 /* YjiMapVc.swift in Sources */,
 				DB90C4F31EE7C3A700107476 /* UIColor+Hue.swift in Sources */,
