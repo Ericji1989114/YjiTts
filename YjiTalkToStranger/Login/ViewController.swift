@@ -38,7 +38,7 @@ class ViewController: YjiBaseVc {
             let dictInfo = ["fields" : "id,name"]
             let request = FBSDKGraphRequest(graphPath: "me", parameters: dictInfo)
             let _ = request?.start(completionHandler: { (_, _, _) in
-                YjiAuthMonitor.sharedInstance.loginFb(token: FBSDKAccessToken.current().tokenString, closure: { [weak self] (success) in
+                YjiFirebaseAuth.sharedInstance.loginFb(token: FBSDKAccessToken.current().tokenString, closure: { [weak self] (success) in
                     if success {
                         TWMessageBarManager.sharedInstance().showMessage(withTitle: "Account Created", description: "Your account was successfully created", type: .success)
                         self?.navigationController?.pushViewController(UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "YjiUserInfoViewController"), animated: true)
@@ -58,7 +58,7 @@ class ViewController: YjiBaseVc {
             }
             let authToken = twInfo.authToken
             let authTokenSecret = twInfo.authTokenSecret
-            YjiAuthMonitor.sharedInstance.loginTw(token: authToken, secret: authTokenSecret, closure: { [weak self] (success) in
+            YjiFirebaseAuth.sharedInstance.loginTw(token: authToken, secret: authTokenSecret, closure: { [weak self] (success) in
                 if success {
                     TWMessageBarManager.sharedInstance().showMessage(withTitle: "Account Created", description: "Your account was successfully created", type: .success)
                     self?.navigationController?.pushViewController(UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "YjiUserInfoViewController"), animated: true)

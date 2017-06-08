@@ -49,7 +49,7 @@
 		DBA854401EE56517009475AF /* SpinerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA8543B1EE56517009475AF /* SpinerLayer.swift */; };
 		DBA854411EE56517009475AF /* TimerEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA8543C1EE56517009475AF /* TimerEx.swift */; };
 		DBA854421EE56517009475AF /* TransitionSubmitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA8543D1EE56517009475AF /* TransitionSubmitButton.swift */; };
-		DBBF54741EE8E57000CC13CE /* YjiAuthMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBF54731EE8E57000CC13CE /* YjiAuthMonitor.swift */; };
+		DBBF54741EE8E57000CC13CE /* YjiFirebaseAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBF54731EE8E57000CC13CE /* YjiFirebaseAuth.swift */; };
 		DBC1AEC31EDE5F04007F8345 /* UserInfo_background.JPG in Resources */ = {isa = PBXBuildFile; fileRef = DBC1AEC21EDE5F04007F8345 /* UserInfo_background.JPG */; };
 		DBC1AEE81EDE6B1A007F8345 /* UIViewController+Animator.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC1AEE51EDE6B1A007F8345 /* UIViewController+Animator.m */; };
 		DBC1AEE91EDE6B1A007F8345 /* ZBFallenBricksAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC1AEE71EDE6B1A007F8345 /* ZBFallenBricksAnimator.m */; };
@@ -126,7 +126,7 @@
 		DBA8543B1EE56517009475AF /* SpinerLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinerLayer.swift; sourceTree = "<group>"; };
 		DBA8543C1EE56517009475AF /* TimerEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerEx.swift; sourceTree = "<group>"; };
 		DBA8543D1EE56517009475AF /* TransitionSubmitButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionSubmitButton.swift; sourceTree = "<group>"; };
-		DBBF54731EE8E57000CC13CE /* YjiAuthMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YjiAuthMonitor.swift; sourceTree = "<group>"; };
+		DBBF54731EE8E57000CC13CE /* YjiFirebaseAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YjiFirebaseAuth.swift; sourceTree = "<group>"; };
 		DBC1AEC21EDE5F04007F8345 /* UserInfo_background.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = UserInfo_background.JPG; sourceTree = "<group>"; };
 		DBC1AEE41EDE6B1A007F8345 /* UIViewController+Animator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Animator.h"; sourceTree = "<group>"; };
 		DBC1AEE51EDE6B1A007F8345 /* UIViewController+Animator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Animator.m"; sourceTree = "<group>"; };
@@ -336,7 +336,7 @@
 		DBBF54721EE8E55B00CC13CE /* FirebaseServer */ = {
 			isa = PBXGroup;
 			children = (
-				DBBF54731EE8E57000CC13CE /* YjiAuthMonitor.swift */,
+				DBBF54731EE8E57000CC13CE /* YjiFirebaseAuth.swift */,
 			);
 			path = FirebaseServer;
 			sourceTree = "<group>";
@@ -600,7 +600,7 @@
 				DBE204F61EE6846200E74A42 /* UIView+Additions.m in Sources */,
 				DB90C4D71EE7C25200107476 /* StackView.swift in Sources */,
 				DBD9CA5A1EDC013200636DB5 /* ViewController.swift in Sources */,
-				DBBF54741EE8E57000CC13CE /* YjiAuthMonitor.swift in Sources */,
+				DBBF54741EE8E57000CC13CE /* YjiFirebaseAuth.swift in Sources */,
 				DB90C4DD1EE7C25200107476 /* ImageGalleryLayout.swift in Sources */,
 				DB7A2D511EDEBA96008998E1 /* YjiMapVc.swift in Sources */,
 				DB90C4F31EE7C3A700107476 /* UIColor+Hue.swift in Sources */,

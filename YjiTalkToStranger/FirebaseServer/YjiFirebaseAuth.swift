@@ -1,5 +1,5 @@
 //
-//  YjiAuthMonitor.swift
+//  YjiFirebaseAuth.swift
 //  YjiTalkToStranger
 //
 //  Created by 季 雲 on 2017/06/07.
@@ -10,14 +10,14 @@ import UIKit
 import FirebaseAuth
 
 
-class YjiAuthMonitor: NSObject {
+class YjiFirebaseAuth: NSObject {
 
     typealias YjiAuthFbLoginClosure = (Bool) -> Void
     typealias YjiAuthtwLoginClosure = (Bool) -> Void
 
-    class var sharedInstance: YjiAuthMonitor {
+    class var sharedInstance: YjiFirebaseAuth {
         struct Static {
-            static let instance: YjiAuthMonitor = YjiAuthMonitor()
+            static let instance: YjiFirebaseAuth = YjiFirebaseAuth()
         }
         return Static.instance
     }
