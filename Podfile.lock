@@ -75,6 +75,7 @@ PODS:
   - Material (2.6.2):
     - Material/Core (= 2.6.2)
   - Material/Core (2.6.2)
+  - pop (1.0.9)
   - Realm (2.5.0):
     - Realm/Headers (= 2.5.0)
   - Realm/Headers (2.5.0)
@@ -106,6 +107,7 @@ DEPENDENCIES:
   - JSQMessagesViewController
   - KLCPopup
   - Material
+  - pop
   - RealmSwift
   - RxCocoa (~> 3.0)
   - RxSwift (~> 3.0)
@@ -138,6 +140,7 @@ SPEC CHECKSUMS:
   JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
   KLCPopup: 76c5a19227977f1e53d85236f9ef42257c168d98
   Material: d602e144b303de8de88456caed3d5771f2b1adc0
+  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   Realm: 62abce501668580092d2be9b6ba7324a3d5f906a
   RealmSwift: 9f1a8f624f2f153410115c2cb7d486be9976565d
   RxCocoa: 7dcb7a1860fc9cd0e23dae67ab105fc2916670b6
@@ -148,6 +151,6 @@ SPEC CHECKSUMS:
   TwitterKit: 3b6044a7320340326a4098f3e37aa1dbaeb94942
   TWMessageBarManager: fd84e7948ba7968a2b5d9454859135761214ec56
 
-PODFILE CHECKSUM: 97063d1072a6e6e61c839af52172d3734f847aa2
+PODFILE CHECKSUM: a7658bd943b1079d9712676b3b1b492d086922de
 
 COCOAPODS: 1.1.1

@@ -27,5 +27,5 @@ target 'YjiTalkToStranger' do
   pod 'TextFieldEffects'
   pod 'ActionSheetPicker-3.0'
   pod 'KLCPopup'
-
+  pod 'pop'
 end

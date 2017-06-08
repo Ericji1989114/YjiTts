@@ -43,6 +43,16 @@
 		DB90C4F31EE7C3A700107476 /* UIColor+Hue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4F11EE7C3A700107476 /* UIColor+Hue.swift */; };
 		DB90C4F41EE7C3A700107476 /* UIImage+Hue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4F21EE7C3A700107476 /* UIImage+Hue.swift */; };
 		DB90C4F71EE7C82800107476 /* UIImageView+FaceAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4F61EE7C82800107476 /* UIImageView+FaceAware.swift */; };
+		DBA59D781EE97FCF00394CF8 /* YjiAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA59D751EE97FCF00394CF8 /* YjiAnimationViewController.swift */; };
+		DBA59D791EE97FCF00394CF8 /* YjiKolodaAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA59D761EE97FCF00394CF8 /* YjiKolodaAnimator.swift */; };
+		DBA59D7A1EE97FCF00394CF8 /* YjiKolodaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA59D771EE97FCF00394CF8 /* YjiKolodaView.swift */; };
+		DBA59D841EE983EE00394CF8 /* DraggableCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA59D7D1EE983EE00394CF8 /* DraggableCardView.swift */; };
+		DBA59D851EE983EE00394CF8 /* KolodaCardStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA59D7E1EE983EE00394CF8 /* KolodaCardStorage.swift */; };
+		DBA59D861EE983EE00394CF8 /* KolodaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA59D7F1EE983EE00394CF8 /* KolodaView.swift */; };
+		DBA59D871EE983EE00394CF8 /* KolodaViewAnimatior.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA59D801EE983EE00394CF8 /* KolodaViewAnimatior.swift */; };
+		DBA59D881EE983EE00394CF8 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA59D821EE983EE00394CF8 /* OverlayView.swift */; };
+		DBA59D891EE983EE00394CF8 /* SwipeResultDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA59D831EE983EE00394CF8 /* SwipeResultDirection.swift */; };
+		DBA59D8B1EE9851700394CF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBA59D8A1EE9851700394CF8 /* Assets.xcassets */; };
 		DBA854361EE50FA4009475AF /* YjiCommonFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA854351EE50FA4009475AF /* YjiCommonFunc.swift */; };
 		DBA8543E1EE56517009475AF /* CGRectEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA854391EE56517009475AF /* CGRectEx.swift */; };
 		DBA8543F1EE56517009475AF /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA8543A1EE56517009475AF /* FadeTransition.swift */; };
@@ -59,7 +69,6 @@
 		DBC1AEF31EDE7EEA007F8345 /* YjiBaseVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC1AEF21EDE7EEA007F8345 /* YjiBaseVc.swift */; };
 		DBD9CA241EDBDDF600636DB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD9CA231EDBDDF600636DB5 /* AppDelegate.swift */; };
 		DBD9CA291EDBDDF600636DB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBD9CA271EDBDDF600636DB5 /* Main.storyboard */; };
-		DBD9CA2B1EDBDDF600636DB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBD9CA2A1EDBDDF600636DB5 /* Assets.xcassets */; };
 		DBD9CA2E1EDBDDF600636DB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBD9CA2C1EDBDDF600636DB5 /* LaunchScreen.storyboard */; };
 		DBD9CA3B1EDBE0E000636DB5 /* Login.JPG in Resources */ = {isa = PBXBuildFile; fileRef = DBD9CA3A1EDBE0E000636DB5 /* Login.JPG */; };
 		DBD9CA521EDBF2C200636DB5 /* fb_login.png in Resources */ = {isa = PBXBuildFile; fileRef = DBD9CA501EDBF2C200636DB5 /* fb_login.png */; };
@@ -121,6 +130,16 @@
 		DB90C4F11EE7C3A700107476 /* UIColor+Hue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hue.swift"; sourceTree = "<group>"; };
 		DB90C4F21EE7C3A700107476 /* UIImage+Hue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Hue.swift"; sourceTree = "<group>"; };
 		DB90C4F61EE7C82800107476 /* UIImageView+FaceAware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+FaceAware.swift"; sourceTree = "<group>"; };
+		DBA59D751EE97FCF00394CF8 /* YjiAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YjiAnimationViewController.swift; sourceTree = "<group>"; };
+		DBA59D761EE97FCF00394CF8 /* YjiKolodaAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YjiKolodaAnimator.swift; sourceTree = "<group>"; };
+		DBA59D771EE97FCF00394CF8 /* YjiKolodaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YjiKolodaView.swift; sourceTree = "<group>"; };
+		DBA59D7D1EE983EE00394CF8 /* DraggableCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableCardView.swift; sourceTree = "<group>"; };
+		DBA59D7E1EE983EE00394CF8 /* KolodaCardStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KolodaCardStorage.swift; sourceTree = "<group>"; };
+		DBA59D7F1EE983EE00394CF8 /* KolodaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KolodaView.swift; sourceTree = "<group>"; };
+		DBA59D801EE983EE00394CF8 /* KolodaViewAnimatior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KolodaViewAnimatior.swift; sourceTree = "<group>"; };
+		DBA59D821EE983EE00394CF8 /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		DBA59D831EE983EE00394CF8 /* SwipeResultDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeResultDirection.swift; sourceTree = "<group>"; };
+		DBA59D8A1EE9851700394CF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBA8542F1EE3EAB8009475AF /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		DBA854351EE50FA4009475AF /* YjiCommonFunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YjiCommonFunc.swift; sourceTree = "<group>"; };
 		DBA854391EE56517009475AF /* CGRectEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRectEx.swift; sourceTree = "<group>"; };
@@ -141,7 +160,6 @@
 		DBD9CA201EDBDDF600636DB5 /* YjiTalkToStranger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YjiTalkToStranger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBD9CA231EDBDDF600636DB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBD9CA281EDBDDF600636DB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DBD9CA2A1EDBDDF600636DB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBD9CA2D1EDBDDF600636DB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBD9CA2F1EDBDDF600636DB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBD9CA3A1EDBE0E000636DB5 /* Login.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Login.JPG; sourceTree = "<group>"; };
@@ -325,6 +343,46 @@
 			path = FaceAware;
 			sourceTree = "<group>";
 		};
+		DBA59D741EE97FCF00394CF8 /* Swipe Selection */ = {
+			isa = PBXGroup;
+			children = (
+				DBA59D7B1EE983EE00394CF8 /* KolodaView */,
+				DBA59D751EE97FCF00394CF8 /* YjiAnimationViewController.swift */,
+				DBA59D761EE97FCF00394CF8 /* YjiKolodaAnimator.swift */,
+				DBA59D771EE97FCF00394CF8 /* YjiKolodaView.swift */,
+			);
+			path = "Swipe Selection";
+			sourceTree = "<group>";
+		};
+		DBA59D7B1EE983EE00394CF8 /* KolodaView */ = {
+			isa = PBXGroup;
+			children = (
+				DBA59D7C1EE983EE00394CF8 /* DraggableCardView */,
+				DBA59D7E1EE983EE00394CF8 /* KolodaCardStorage.swift */,
+				DBA59D7F1EE983EE00394CF8 /* KolodaView.swift */,
+				DBA59D801EE983EE00394CF8 /* KolodaViewAnimatior.swift */,
+				DBA59D811EE983EE00394CF8 /* OverlayView */,
+				DBA59D831EE983EE00394CF8 /* SwipeResultDirection.swift */,
+			);
+			path = KolodaView;
+			sourceTree = "<group>";
+		};
+		DBA59D7C1EE983EE00394CF8 /* DraggableCardView */ = {
+			isa = PBXGroup;
+			children = (
+				DBA59D7D1EE983EE00394CF8 /* DraggableCardView.swift */,
+			);
+			path = DraggableCardView;
+			sourceTree = "<group>";
+		};
+		DBA59D811EE983EE00394CF8 /* OverlayView */ = {
+			isa = PBXGroup;
+			children = (
+				DBA59D821EE983EE00394CF8 /* OverlayView.swift */,
+			);
+			path = OverlayView;
+			sourceTree = "<group>";
+		};
 		DBA854381EE56517009475AF /* TKSubmitTransition */ = {
 			isa = PBXGroup;
 			children = (
@@ -379,14 +437,15 @@
 		DBD9CA221EDBDDF600636DB5 /* YjiTalkToStranger */ = {
 			isa = PBXGroup;
 			children = (
+				DBA59D741EE97FCF00394CF8 /* Swipe Selection */,
 				DBBF54721EE8E55B00CC13CE /* FirebaseServer */,
 				DB7A2D4D1EDEB7B2008998E1 /* Map */,
 				DBD9CA601EDC1F6400636DB5 /* Custom */,
 				DBD9CA581EDC013200636DB5 /* Login */,
 				DBD9CA231EDBDDF600636DB5 /* AppDelegate.swift */,
 				DBD9CA271EDBDDF600636DB5 /* Main.storyboard */,
-				DBD9CA2A1EDBDDF600636DB5 /* Assets.xcassets */,
 				DBD9CA2C1EDBDDF600636DB5 /* LaunchScreen.storyboard */,
+				DBA59D8A1EE9851700394CF8 /* Assets.xcassets */,
 				DBD9CA2F1EDBDDF600636DB5 /* Info.plist */,
 				DBD9CA5B1EDC033000636DB5 /* GoogleService-Info.plist */,
 				DBD9CA5D1EDC1AB000636DB5 /* YjiTalkToStranger-Bridging-Header.h */,
@@ -525,6 +584,7 @@
 				DBC1AEC31EDE5F04007F8345 /* UserInfo_background.JPG in Resources */,
 				DBD9CA561EDBF4B500636DB5 /* fb_login2.png in Resources */,
 				DBD9CA6D1EDC252F00636DB5 /* icon-info@2x.png in Resources */,
+				DBA59D8B1EE9851700394CF8 /* Assets.xcassets in Resources */,
 				DBD9CA3B1EDBE0E000636DB5 /* Login.JPG in Resources */,
 				DBD9CA6C1EDC252F00636DB5 /* icon-info.png in Resources */,
 				DBD9CA6E1EDC252F00636DB5 /* icon-success.png in Resources */,
@@ -535,7 +595,6 @@
 				DBD9CA2E1EDBDDF600636DB5 /* LaunchScreen.storyboard in Resources */,
 				DBE204F91EE690A900E74A42 /* select_album.png in Resources */,
 				DBD9CA531EDBF2C200636DB5 /* tw_login.png in Resources */,
-				DBD9CA2B1EDBDDF600636DB5 /* Assets.xcassets in Resources */,
 				DBD9CA571EDBF4B500636DB5 /* tw_login2.png in Resources */,
 				DBD9CA521EDBF2C200636DB5 /* fb_login.png in Resources */,
 				DBE204FA1EE690A900E74A42 /* take_photo.png in Resources */,
@@ -605,7 +664,10 @@
 				DB90C4E71EE7C25200107476 /* LightboxController.swift in Sources */,
 				DB90C4DF1EE7C25200107476 /* ImageGalleryViewCell.swift in Sources */,
 				DBE204F61EE6846200E74A42 /* UIView+Additions.m in Sources */,
+				DBA59D861EE983EE00394CF8 /* KolodaView.swift in Sources */,
+				DBA59D851EE983EE00394CF8 /* KolodaCardStorage.swift in Sources */,
 				DB90C4D71EE7C25200107476 /* StackView.swift in Sources */,
+				DBA59D881EE983EE00394CF8 /* OverlayView.swift in Sources */,
 				DBD9CA5A1EDC013200636DB5 /* ViewController.swift in Sources */,
 				DBBF54741EE8E57000CC13CE /* YjiFirebaseAuth.swift in Sources */,
 				DB90C4DD1EE7C25200107476 /* ImageGalleryLayout.swift in Sources */,
@@ -617,10 +679,14 @@
 				DBA854421EE56517009475AF /* TransitionSubmitButton.swift in Sources */,
 				DB90C4E91EE7C25200107476 /* FooterView.swift in Sources */,
 				DBA854401EE56517009475AF /* SpinerLayer.swift in Sources */,
+				DBA59D791EE97FCF00394CF8 /* YjiKolodaAnimator.swift in Sources */,
+				DBA59D781EE97FCF00394CF8 /* YjiAnimationViewController.swift in Sources */,
 				DB90C4E21EE7C25200107476 /* LightboxAssetManager.swift in Sources */,
+				DBA59D891EE983EE00394CF8 /* SwipeResultDirection.swift in Sources */,
 				DBC1AEE81EDE6B1A007F8345 /* UIViewController+Animator.m in Sources */,
 				DB90C4EE1EE7C25200107476 /* LocationManager.swift in Sources */,
 				DB90C4D41EE7C25200107476 /* BottomContainerView.swift in Sources */,
+				DBA59D841EE983EE00394CF8 /* DraggableCardView.swift in Sources */,
 				DBA854361EE50FA4009475AF /* YjiCommonFunc.swift in Sources */,
 				DBC1AEE91EDE6B1A007F8345 /* ZBFallenBricksAnimator.m in Sources */,
 				DB90C4E61EE7C25200107476 /* LightboxConfig.swift in Sources */,
@@ -628,8 +694,10 @@
 				DB90C4DA1EE7C25200107476 /* Configuration.swift in Sources */,
 				DB7A2D551EDEBEBB008998E1 /* YjiRootVcManager.swift in Sources */,
 				DB90C4EB1EE7C25200107476 /* InfoLabel.swift in Sources */,
+				DBA59D871EE983EE00394CF8 /* KolodaViewAnimatior.swift in Sources */,
 				DBBF54781EE8E7AB00CC13CE /* YjiFirebaseStorage.swift in Sources */,
 				DB90C4D61EE7C25200107476 /* ImageStack.swift in Sources */,
+				DBA59D7A1EE97FCF00394CF8 /* YjiKolodaView.swift in Sources */,
 				DB90C4D51EE7C25200107476 /* ButtonPicker.swift in Sources */,
 				DB90C4D81EE7C25200107476 /* CameraMan.swift in Sources */,
 				DB90C4D91EE7C25200107476 /* CameraView.swift in Sources */,

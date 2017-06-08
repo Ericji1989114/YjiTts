@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="V9a-h9-xMt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="c7x-Xs-vmo">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,7 +13,7 @@
         <scene sceneID="24b-9S-FFr">
             <objects>
                 <navigationController id="V9a-h9-xMt" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kli-qa-PyR">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Kli-qa-PyR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -289,12 +289,79 @@
             </objects>
             <point key="canvasLocation" x="204" y="22.938530734632685"/>
         </scene>
+        <!--Yji Animation View Controller-->
+        <scene sceneID="5Nw-NB-sz2">
+            <objects>
+                <viewController id="c7x-Xs-vmo" customClass="YjiAnimationViewController" customModule="YjiTalkToStranger" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VZD-MQ-L1I"/>
+                        <viewControllerLayoutGuide type="bottom" id="IhF-M3-feI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xK6-cP-Krx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I10-Jm-Jwj" customClass="YjiKolodaView" customModule="YjiTalkToStranger" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3K-P3-EhT">
+                                        <rect key="frame" x="100" y="513" width="34" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="34" id="ID0-8o-ol9"/>
+                                            <constraint firstAttribute="height" constant="34" id="U34-L6-2yp"/>
+                                        </constraints>
+                                        <state key="normal" image="ic_skip">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="leftButtonTapped" destination="c7x-Xs-vmo" eventType="touchUpInside" id="dgf-f0-9AL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l15-Hn-nN1">
+                                        <rect key="frame" x="237" y="513" width="38" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="38" id="DE1-qV-Wqy"/>
+                                            <constraint firstAttribute="height" constant="34" id="Y2h-9g-meQ"/>
+                                        </constraints>
+                                        <state key="normal" image="ic_like">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="rightButtonTapped" destination="c7x-Xs-vmo" eventType="touchUpInside" id="7gY-YG-x3b"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="l15-Hn-nN1" secondAttribute="bottom" constant="120" id="0du-DB-MIY"/>
+                                    <constraint firstAttribute="bottom" secondItem="K3K-P3-EhT" secondAttribute="bottom" constant="120" id="7Fw-g9-q3h"/>
+                                    <constraint firstItem="K3K-P3-EhT" firstAttribute="leading" secondItem="I10-Jm-Jwj" secondAttribute="leading" constant="100" id="CoN-Fh-ot8"/>
+                                    <constraint firstAttribute="trailing" secondItem="l15-Hn-nN1" secondAttribute="trailing" constant="100" id="Wnb-qE-1Wu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.074509803921568626" blue="0.15294117647058825" alpha="0.75240796232876717" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="I10-Jm-Jwj" firstAttribute="top" secondItem="xK6-cP-Krx" secondAttribute="top" id="0aa-uK-Thz"/>
+                            <constraint firstAttribute="trailing" secondItem="I10-Jm-Jwj" secondAttribute="trailing" id="U6H-fg-P8L"/>
+                            <constraint firstItem="IhF-M3-feI" firstAttribute="top" secondItem="I10-Jm-Jwj" secondAttribute="bottom" id="aqW-C4-bvP"/>
+                            <constraint firstItem="I10-Jm-Jwj" firstAttribute="leading" secondItem="xK6-cP-Krx" secondAttribute="leading" id="yKq-iT-o3B"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="kolodaView" destination="I10-Jm-Jwj" id="6m8-qh-Zzg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s6H-Nv-RCS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1754.4000000000001" y="2475.1124437781114"/>
+        </scene>
         <!--Item-->
         <scene sceneID="dai-HL-ezQ">
             <objects>
                 <navigationController id="wk0-3M-wZD" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="9ju-dd-eIH"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bZr-bV-gdg">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="bZr-bV-gdg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -311,7 +378,7 @@
             <objects>
                 <navigationController id="UV6-m3-xyn" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="VvF-W4-AJV"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Knn-FS-bxg">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Knn-FS-bxg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -367,6 +434,8 @@
         <image name="UserInfo_background.JPG" width="744" height="1324"/>
         <image name="avatar_default.png" width="234" height="234"/>
         <image name="fb_login.png" width="128" height="128"/>
+        <image name="ic_like" width="38" height="34"/>
+        <image name="ic_skip" width="34" height="34"/>
         <image name="tw_login.png" width="128" height="128"/>
     </resources>
 </document>
