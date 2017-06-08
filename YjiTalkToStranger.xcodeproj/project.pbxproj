@@ -43,13 +43,13 @@
 		DB90C4F31EE7C3A700107476 /* UIColor+Hue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4F11EE7C3A700107476 /* UIColor+Hue.swift */; };
 		DB90C4F41EE7C3A700107476 /* UIImage+Hue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4F21EE7C3A700107476 /* UIImage+Hue.swift */; };
 		DB90C4F71EE7C82800107476 /* UIImageView+FaceAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4F61EE7C82800107476 /* UIImageView+FaceAware.swift */; };
-		DB90C4FA1EE7D37C00107476 /* YjiAuthMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90C4F91EE7D37C00107476 /* YjiAuthMonitor.swift */; };
 		DBA854361EE50FA4009475AF /* YjiCommonFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA854351EE50FA4009475AF /* YjiCommonFunc.swift */; };
 		DBA8543E1EE56517009475AF /* CGRectEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA854391EE56517009475AF /* CGRectEx.swift */; };
 		DBA8543F1EE56517009475AF /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA8543A1EE56517009475AF /* FadeTransition.swift */; };
 		DBA854401EE56517009475AF /* SpinerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA8543B1EE56517009475AF /* SpinerLayer.swift */; };
 		DBA854411EE56517009475AF /* TimerEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA8543C1EE56517009475AF /* TimerEx.swift */; };
 		DBA854421EE56517009475AF /* TransitionSubmitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA8543D1EE56517009475AF /* TransitionSubmitButton.swift */; };
+		DBBF54741EE8E57000CC13CE /* YjiAuthMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBF54731EE8E57000CC13CE /* YjiAuthMonitor.swift */; };
 		DBC1AEC31EDE5F04007F8345 /* UserInfo_background.JPG in Resources */ = {isa = PBXBuildFile; fileRef = DBC1AEC21EDE5F04007F8345 /* UserInfo_background.JPG */; };
 		DBC1AEE81EDE6B1A007F8345 /* UIViewController+Animator.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC1AEE51EDE6B1A007F8345 /* UIViewController+Animator.m */; };
 		DBC1AEE91EDE6B1A007F8345 /* ZBFallenBricksAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC1AEE71EDE6B1A007F8345 /* ZBFallenBricksAnimator.m */; };
@@ -119,7 +119,6 @@
 		DB90C4F11EE7C3A700107476 /* UIColor+Hue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hue.swift"; sourceTree = "<group>"; };
 		DB90C4F21EE7C3A700107476 /* UIImage+Hue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Hue.swift"; sourceTree = "<group>"; };
 		DB90C4F61EE7C82800107476 /* UIImageView+FaceAware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+FaceAware.swift"; sourceTree = "<group>"; };
-		DB90C4F91EE7D37C00107476 /* YjiAuthMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YjiAuthMonitor.swift; sourceTree = "<group>"; };
 		DBA8542F1EE3EAB8009475AF /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		DBA854351EE50FA4009475AF /* YjiCommonFunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YjiCommonFunc.swift; sourceTree = "<group>"; };
 		DBA854391EE56517009475AF /* CGRectEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRectEx.swift; sourceTree = "<group>"; };
@@ -127,6 +126,7 @@
 		DBA8543B1EE56517009475AF /* SpinerLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinerLayer.swift; sourceTree = "<group>"; };
 		DBA8543C1EE56517009475AF /* TimerEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerEx.swift; sourceTree = "<group>"; };
 		DBA8543D1EE56517009475AF /* TransitionSubmitButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionSubmitButton.swift; sourceTree = "<group>"; };
+		DBBF54731EE8E57000CC13CE /* YjiAuthMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YjiAuthMonitor.swift; sourceTree = "<group>"; };
 		DBC1AEC21EDE5F04007F8345 /* UserInfo_background.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = UserInfo_background.JPG; sourceTree = "<group>"; };
 		DBC1AEE41EDE6B1A007F8345 /* UIViewController+Animator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Animator.h"; sourceTree = "<group>"; };
 		DBC1AEE51EDE6B1A007F8345 /* UIViewController+Animator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Animator.m"; sourceTree = "<group>"; };
@@ -333,6 +333,14 @@
 			path = TKSubmitTransition;
 			sourceTree = "<group>";
 		};
+		DBBF54721EE8E55B00CC13CE /* FirebaseServer */ = {
+			isa = PBXGroup;
+			children = (
+				DBBF54731EE8E57000CC13CE /* YjiAuthMonitor.swift */,
+			);
+			path = FirebaseServer;
+			sourceTree = "<group>";
+		};
 		DBC1AEE31EDE6B1A007F8345 /* ZBCustomTransitions */ = {
 			isa = PBXGroup;
 			children = (
@@ -365,6 +373,7 @@
 		DBD9CA221EDBDDF600636DB5 /* YjiTalkToStranger */ = {
 			isa = PBXGroup;
 			children = (
+				DBBF54721EE8E55B00CC13CE /* FirebaseServer */,
 				DB7A2D4D1EDEB7B2008998E1 /* Map */,
 				DBD9CA601EDC1F6400636DB5 /* Custom */,
 				DBD9CA581EDC013200636DB5 /* Login */,
@@ -408,7 +417,6 @@
 				DBD9CA591EDC013200636DB5 /* ViewController.swift */,
 				DBC1AEEE1EDE713D007F8345 /* YjiUserInfoViewController.swift */,
 				DB7A2D4B1EDEAE36008998E1 /* YjiTabBarVc.swift */,
-				DB90C4F91EE7D37C00107476 /* YjiAuthMonitor.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -592,7 +600,7 @@
 				DBE204F61EE6846200E74A42 /* UIView+Additions.m in Sources */,
 				DB90C4D71EE7C25200107476 /* StackView.swift in Sources */,
 				DBD9CA5A1EDC013200636DB5 /* ViewController.swift in Sources */,
-				DB90C4FA1EE7D37C00107476 /* YjiAuthMonitor.swift in Sources */,
+				DBBF54741EE8E57000CC13CE /* YjiAuthMonitor.swift in Sources */,
 				DB90C4DD1EE7C25200107476 /* ImageGalleryLayout.swift in Sources */,
 				DB7A2D511EDEBA96008998E1 /* YjiMapVc.swift in Sources */,
 				DB90C4F31EE7C3A700107476 /* UIColor+Hue.swift in Sources */,
