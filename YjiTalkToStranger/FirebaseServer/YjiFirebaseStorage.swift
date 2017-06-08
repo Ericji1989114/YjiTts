@@ -30,13 +30,14 @@ class YjiFirebaseStorage: NSObject {
         guard let data = UIImagePNGRepresentation(image) else {return}
         let riversRef = firebaseStorageRef.child(toPath)
         print(firebaseStorageRef.bucket)
-        let uploadTask = riversRef.put(data, metadata: nil) { (metadata, error) in
+        let _ = riversRef.put(data, metadata: nil) { (metadata, error) in
             guard error == nil else {
-                print(error?.localizedDescription)
                 print(error.debugDescription)
                 return
             }
-            print(metadata?.downloadURL())
+            guard let imagePath = metadata?.downloadURL()?.path else {return}
+            guard let currentUid = YjiFirebaseAuth.sharedInstance.currentUid else {return}
+            YjiFirebaseRTDB.sharedInstance.setImagePath(path: imagePath, currentUid: currentUid)
         }
         
     }

@@ -23,4 +23,10 @@ class YjiFirebaseRTDB: NSObject {
     func update(path: String, value: [AnyHashable : Any]) {
         firebaseRef.child(path).updateChildValues(value)
     }
+    
+    // imagePath save path is users/{uid}/avatarPath
+    func setImagePath(path: String, currentUid: String) {
+        let imageRef = firebaseRef.child("users").child(currentUid)
+        imageRef.updateChildValues(["avatarPath" : path])
+    }
 }
