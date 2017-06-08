@@ -12,6 +12,7 @@ import ActionSheetPicker_3_0
 
 class YjiUserInfoViewController: YjiBaseVc, UITextFieldDelegate, UIViewControllerTransitioningDelegate, ImagePickerDelegate {
     
+    @IBOutlet weak var nickName: HoshiTextField!
     @IBOutlet weak var userAvatar: UIImageView!
     @IBOutlet weak var birthBtn: UIButton!
     private var birthUnixTime: TimeInterval? = 0
@@ -39,10 +40,19 @@ class YjiUserInfoViewController: YjiBaseVc, UITextFieldDelegate, UIViewControlle
     }
     
     @IBAction func onTapOKBtn(btn: TKTransitionSubmitButton) {
-        btn.animate(1, completion: { () -> () in
+        btn.animate(1, completion: { [weak self] () -> () in
+            // save user info to server
+            guard let name = self?.nickName.text else {return}
+//            guard let image = self?.userAvatar.image else {return}
+            guard let currentUid = YjiFirebaseAuth.sharedInstance.currentUid else {return}
+            let userInfo = [currentUid : ["userName" : name, "avatarPath" : "xxx"]]
+            YjiFirebaseRTDB.sharedInstance.update(path: "users", value: userInfo)
+            
+            
+            
             let secondVC = UIViewController()
             secondVC.transitioningDelegate = self
-            self.present(secondVC, animated: true, completion: nil)
+            self?.present(secondVC, animated: true, completion: nil)
         })
     }
     

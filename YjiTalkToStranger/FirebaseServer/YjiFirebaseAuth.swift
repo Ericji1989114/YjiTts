@@ -12,6 +12,7 @@ import FirebaseAuth
 
 class YjiFirebaseAuth: NSObject {
 
+    var currentUid: String? = nil
     typealias YjiAuthFbLoginClosure = (Bool) -> Void
     typealias YjiAuthtwLoginClosure = (Bool) -> Void
 
@@ -24,10 +25,11 @@ class YjiFirebaseAuth: NSObject {
     
     func addObserverForUserLoginState() {
         try! FIRAuth.auth()?.signOut()
-        FIRAuth.auth()?.addStateDidChangeListener({ (auth, user) in
+        FIRAuth.auth()?.addStateDidChangeListener({ [weak self] (auth, user) in
             print(auth)
             print(user?.displayName ?? "")
             print(user?.uid ?? "")
+            self?.currentUid = user?.uid
         })
     }
     

@@ -13,7 +13,7 @@
         <scene sceneID="24b-9S-FFr">
             <objects>
                 <navigationController id="V9a-h9-xMt" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Kli-qa-PyR">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kli-qa-PyR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -276,6 +276,7 @@
                     </view>
                     <connections>
                         <outlet property="birthBtn" destination="BEQ-C8-sET" id="mXe-yz-448"/>
+                        <outlet property="nickName" destination="pad-nq-NEX" id="7G7-5D-fbG"/>
                         <outlet property="userAvatar" destination="J4P-k2-2WF" id="ueG-km-lY3"/>
                     </connections>
                 </viewController>
@@ -293,7 +294,7 @@
             <objects>
                 <navigationController id="wk0-3M-wZD" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="9ju-dd-eIH"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="bZr-bV-gdg">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bZr-bV-gdg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -310,7 +311,7 @@
             <objects>
                 <navigationController id="UV6-m3-xyn" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="VvF-W4-AJV"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Knn-FS-bxg">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Knn-FS-bxg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
