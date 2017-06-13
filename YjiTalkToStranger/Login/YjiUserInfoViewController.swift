@@ -49,9 +49,12 @@ class YjiUserInfoViewController: YjiBaseVc, UITextFieldDelegate, UIViewControlle
             YjiFirebaseStorage.sharedInstance.uploadImage(image: image, toPath: storagePath)
             let userInfo = [currentUid : ["userName" : name, "avatarPath" : "storagePath"]]
             YjiFirebaseRTDB.sharedInstance.update(path: "users", value: userInfo)
+            // this view controller have not any meaning,just for animiation. buffer view controller
             let secondVC = UIViewController()
             secondVC.transitioningDelegate = self
-            self?.present(secondVC, animated: true, completion: nil)
+            self?.present(secondVC, animated: true, completion: { 
+                YjiRootVcManager.moveToTabBarVc()
+            })
         })
     }
     
