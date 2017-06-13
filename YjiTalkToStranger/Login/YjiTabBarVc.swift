@@ -21,14 +21,24 @@ class YjiTabBarVc: YALFoldingTabBarController {
             rightItemImage: nil
         )
         let secondItem = YALTabBarItem(
+            itemImage: UIImage(named: "search_icon")!,
+            leftItemImage: nil,
+            rightItemImage: nil
+        )
+        let thirdItem = YALTabBarItem(
+            itemImage: UIImage(named: "chats_icon")!,
+            leftItemImage: nil,
+            rightItemImage: nil
+        )
+        let fourthItem = YALTabBarItem(
             itemImage: UIImage(named: "profile_icon")!,
             leftItemImage: nil,
             rightItemImage: nil
         )
-        self.leftBarItems = [firstItem]
-        self.rightBarItems = [secondItem]
+        self.leftBarItems = [firstItem, secondItem]
+        self.rightBarItems = [thirdItem, fourthItem]
         self.centerButtonImage = UIImage(named:"plus_icon")!
-        self.selectedIndex = 0
+        self.selectedIndex = 1
         self.tabBarView.extraTabBarItemHeight = YALExtraTabBarItemsDefaultHeight;
         self.tabBarView.offsetForExtraTabBarItems = YALForExtraTabBarItemsDefaultOffset;
         self.tabBarView.backgroundColor = UIColor.clear

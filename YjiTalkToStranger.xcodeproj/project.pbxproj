@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB1D8A6C1EEE976600C7B119 /* YjiUserInfoChangeVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1D8A6B1EEE976600C7B119 /* YjiUserInfoChangeVc.swift */; };
 		DB7A2D4C1EDEAE36008998E1 /* YjiTabBarVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7A2D4B1EDEAE36008998E1 /* YjiTabBarVc.swift */; };
 		DB7A2D4F1EDEB7B2008998E1 /* YjiLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7A2D4E1EDEB7B2008998E1 /* YjiLocationManager.swift */; };
 		DB7A2D511EDEBA96008998E1 /* YjiMapVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7A2D501EDEBA96008998E1 /* YjiMapVc.swift */; };
@@ -93,6 +94,7 @@
 /* Begin PBXFileReference section */
 		8C65FF676536B03ACDFB78B0 /* Pods_YjiTalkToStranger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YjiTalkToStranger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA23A8B13A8DC563AF79E6D /* Pods-YjiTalkToStranger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YjiTalkToStranger.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YjiTalkToStranger/Pods-YjiTalkToStranger.debug.xcconfig"; sourceTree = "<group>"; };
+		DB1D8A6B1EEE976600C7B119 /* YjiUserInfoChangeVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YjiUserInfoChangeVc.swift; sourceTree = "<group>"; };
 		DB7A2D4B1EDEAE36008998E1 /* YjiTabBarVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YjiTabBarVc.swift; sourceTree = "<group>"; };
 		DB7A2D4E1EDEB7B2008998E1 /* YjiLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YjiLocationManager.swift; sourceTree = "<group>"; };
 		DB7A2D501EDEBA96008998E1 /* YjiMapVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YjiMapVc.swift; sourceTree = "<group>"; };
@@ -213,6 +215,14 @@
 				F66E92FABE81D4B15C8720D1 /* Pods-YjiTalkToStranger.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		DB1D8A6A1EEE973D00C7B119 /* User Setting */ = {
+			isa = PBXGroup;
+			children = (
+				DB1D8A6B1EEE976600C7B119 /* YjiUserInfoChangeVc.swift */,
+			);
+			path = "User Setting";
 			sourceTree = "<group>";
 		};
 		DB7A2D4D1EDEB7B2008998E1 /* Map */ = {
@@ -437,6 +447,7 @@
 		DBD9CA221EDBDDF600636DB5 /* YjiTalkToStranger */ = {
 			isa = PBXGroup;
 			children = (
+				DB1D8A6A1EEE973D00C7B119 /* User Setting */,
 				DBA59D741EE97FCF00394CF8 /* Swipe Selection */,
 				DBBF54721EE8E55B00CC13CE /* FirebaseServer */,
 				DB7A2D4D1EDEB7B2008998E1 /* Map */,
@@ -674,6 +685,7 @@
 				DB7A2D511EDEBA96008998E1 /* YjiMapVc.swift in Sources */,
 				DB90C4F31EE7C3A700107476 /* UIColor+Hue.swift in Sources */,
 				DB90C4E41EE7C25200107476 /* LightboxTransition.swift in Sources */,
+				DB1D8A6C1EEE976600C7B119 /* YjiUserInfoChangeVc.swift in Sources */,
 				DB90C4DC1EE7C25200107476 /* Helper.swift in Sources */,
 				DB90C4E51EE7C25200107476 /* UIView+Gradient.swift in Sources */,
 				DBA854421EE56517009475AF /* TransitionSubmitButton.swift in Sources */,
