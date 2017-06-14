@@ -15,7 +15,7 @@ private let frameAnimationSpringSpeed: CGFloat = 16
 private let kolodaCountOfVisibleCards = 2
 private let kolodaAlphaValueSemiTransparent: CGFloat = 0.1
 
-class YjiAnimationViewController: UIViewController {
+class YjiAnimationViewController: YjiBaseVc {
 
     @IBOutlet weak var kolodaView: YjiKolodaView!
     

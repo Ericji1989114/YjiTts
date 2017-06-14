@@ -19,4 +19,9 @@ class YjiCommonFunc: NSObject {
         return formatter.string(from: date)
     }
     
+    class func stringYMD(unixTime: TimeInterval) -> String {
+        let date = Date(timeIntervalSince1970: unixTime)
+        return stringYMD(date: date)
+    }
+    
 }

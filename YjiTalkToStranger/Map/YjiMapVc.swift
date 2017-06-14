@@ -9,7 +9,7 @@
 import UIKit
 import GoogleMaps
 
-class YjiMapVc: UIViewController {
+class YjiMapVc: YjiBaseVc {
     
     var mYjiLocationManager: YjiLocationManager?
     

@@ -13,7 +13,7 @@
         <scene sceneID="24b-9S-FFr">
             <objects>
                 <navigationController storyboardIdentifier="YjiLoginNavigationVc" id="V9a-h9-xMt" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kli-qa-PyR">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Kli-qa-PyR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -553,9 +553,18 @@
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" id="ciH-Qn-iY2"/>
+                    <connections>
+                        <outlet property="birthBtn" destination="R8t-dO-YZT" id="Edb-WV-AgT"/>
+                        <outlet property="nickName" destination="IV6-39-YGl" id="s4X-HD-Wbk"/>
+                        <outlet property="userAvatar" destination="yGz-n3-tJ5" id="D3R-Cc-dpj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NMG-ik-3xy" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="fwN-hw-cJs"/>
+                <tapGestureRecognizer id="fwN-hw-cJs">
+                    <connections>
+                        <action selector="onTapAvatarSetting:" destination="uKr-ue-w9b" id="OAG-nm-6me"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-767.20000000000005" y="3518.5907046476764"/>
         </scene>

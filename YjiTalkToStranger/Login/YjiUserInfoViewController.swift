@@ -46,13 +46,20 @@ class YjiUserInfoViewController: YjiBaseVc, UITextFieldDelegate, UIViewControlle
             guard let image = self?.userAvatar.image else {return}
             guard let currentUid = YjiFirebaseAuth.sharedInstance.currentUid else {return}
             let storagePath = "images/" + "\(currentUid)_profile.png"
-            YjiFirebaseStorage.sharedInstance.uploadImage(image: image, toPath: storagePath)
-            let userInfo = [currentUid : ["userName" : name, "avatarPath" : "storagePath"]]
-            YjiFirebaseRTDB.sharedInstance.update(path: "users", value: userInfo)
+            DispatchQueue.global().async {
+                YjiFirebaseStorage.sharedInstance.uploadImage(image: image, toPath: storagePath, completion: { (downloadPath) in
+                    let userInfo = [currentUid : ["userName" : name, "avatarPath" : downloadPath]]
+                    YjiFirebaseRTDB.sharedInstance.update(path: "users", value: userInfo)
+                })
+            }
+            // save data to local db
+            let imageData = UIImagePNGRepresentation(image)
+            YjiRealmManager.sharedInstance.addUserInfo(uid: currentUid, userName: name, avatarImage: imageData!, birthUnixTime: (self?.birthUnixTime)!)
             // this view controller have not any meaning,just for animiation. buffer view controller
             let tempVc = YjiTempMoveVc()
             tempVc.transitioningDelegate = self
             self?.present(tempVc, animated: true, completion: nil)
+            
         })
     }
     

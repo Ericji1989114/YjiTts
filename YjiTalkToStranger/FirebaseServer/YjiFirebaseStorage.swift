@@ -12,6 +12,7 @@ import Firebase
 
 class YjiFirebaseStorage: NSObject {
     
+    typealias YjiStorageUploadImageClosure = (String?) -> Void
     let firebaseStorage = FIRStorage.storage(url: "gs://yjitalktostranger.appspot.com/")
     var firebaseStorageRef: FIRStorageReference {
         get {
@@ -26,7 +27,7 @@ class YjiFirebaseStorage: NSObject {
         return Static.instance
     }
     
-    func uploadImage(image: UIImage, toPath: String) {
+    func uploadImage(image: UIImage, toPath: String, completion: @escaping YjiStorageUploadImageClosure) {
         guard let data = UIImagePNGRepresentation(image) else {return}
         let riversRef = firebaseStorageRef.child(toPath)
         print(firebaseStorageRef.bucket)
@@ -35,9 +36,11 @@ class YjiFirebaseStorage: NSObject {
                 print(error.debugDescription)
                 return
             }
-            guard let imagePath = metadata?.downloadURL()?.path else {return}
-            guard let currentUid = YjiFirebaseAuth.sharedInstance.currentUid else {return}
-            YjiFirebaseRTDB.sharedInstance.setImagePath(path: imagePath, currentUid: currentUid)
+            guard let imagePath = metadata?.downloadURL()?.path else {
+                completion(nil)
+                return
+            }
+            completion(imagePath)
         }
         
     }

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "YjiRealmManager.addUserInfo(uid : String, userName : String, avatarPath : String, birthUnixTime : Double) -&gt; ():YjiRealmManager.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Realm.Configuration().fileURL">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "YjiRealmManager.init() -&gt; YjiRealmManager:YjiRealmManager.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "config.fileURL">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

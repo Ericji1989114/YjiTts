@@ -17,6 +17,7 @@ class YjiBaseVc: UIViewController, UINavigationControllerDelegate {
             return
         }
         navigationController.delegate = self
+        navigationController.navigationBar.barTintColor = UIColor(red: 73.0/255.0, green: 211.0/255.0, blue: 178.0/255.0, alpha: 0.5)
         let tapViewGesture = UITapGestureRecognizer(target: self, action: #selector(YjiBaseVc.dismissKeyboard))
         self.view.isUserInteractionEnabled = true
         self.view.addGestureRecognizer(tapViewGesture)
