@@ -15,4 +15,11 @@ class YjiRootVcManager: NSObject {
         guard let appdelegate = UIApplication.shared.delegate as? AppDelegate else {return}
         appdelegate.window?.rootViewController = tabBarVc
     }
+    
+    func moveToLogin() {
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        guard let loginVc = storyboard.instantiateViewController(withIdentifier: "YjiLoginNavigationVc") as? UINavigationController else {return}
+        guard let appdelegate = UIApplication.shared.delegate as? AppDelegate else {return}
+        appdelegate.window?.rootViewController = loginVc
+    }
 }

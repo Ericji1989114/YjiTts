@@ -50,11 +50,9 @@ class YjiUserInfoViewController: YjiBaseVc, UITextFieldDelegate, UIViewControlle
             let userInfo = [currentUid : ["userName" : name, "avatarPath" : "storagePath"]]
             YjiFirebaseRTDB.sharedInstance.update(path: "users", value: userInfo)
             // this view controller have not any meaning,just for animiation. buffer view controller
-            let secondVC = UIViewController()
-            secondVC.transitioningDelegate = self
-            self?.present(secondVC, animated: true, completion: { 
-                YjiRootVcManager.moveToTabBarVc()
-            })
+            let tempVc = YjiTempMoveVc()
+            tempVc.transitioningDelegate = self
+            self?.present(tempVc, animated: true, completion: nil)
         })
     }
     

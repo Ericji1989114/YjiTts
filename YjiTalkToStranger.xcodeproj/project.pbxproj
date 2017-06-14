@@ -88,6 +88,7 @@
 		DBE204F61EE6846200E74A42 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE204F51EE6846200E74A42 /* UIView+Additions.m */; };
 		DBE204F91EE690A900E74A42 /* select_album.png in Resources */ = {isa = PBXBuildFile; fileRef = DBE204F71EE690A900E74A42 /* select_album.png */; };
 		DBE204FA1EE690A900E74A42 /* take_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = DBE204F81EE690A900E74A42 /* take_photo.png */; };
+		DBEAB2B11EF0D9AA0069F3D2 /* YjiTempMoveVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEAB2B01EF0D9AA0069F3D2 /* YjiTempMoveVc.swift */; };
 		FE5B43A49228993429F05841 /* Pods_YjiTalkToStranger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C65FF676536B03ACDFB78B0 /* Pods_YjiTalkToStranger.framework */; };
 /* End PBXBuildFile section */
 
@@ -183,6 +184,7 @@
 		DBE204F51EE6846200E74A42 /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
 		DBE204F71EE690A900E74A42 /* select_album.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = select_album.png; sourceTree = "<group>"; };
 		DBE204F81EE690A900E74A42 /* take_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = take_photo.png; sourceTree = "<group>"; };
+		DBEAB2B01EF0D9AA0069F3D2 /* YjiTempMoveVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YjiTempMoveVc.swift; sourceTree = "<group>"; };
 		F66E92FABE81D4B15C8720D1 /* Pods-YjiTalkToStranger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YjiTalkToStranger.release.xcconfig"; path = "Pods/Target Support Files/Pods-YjiTalkToStranger/Pods-YjiTalkToStranger.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -493,6 +495,7 @@
 				DBD9CA591EDC013200636DB5 /* ViewController.swift */,
 				DBC1AEEE1EDE713D007F8345 /* YjiUserInfoViewController.swift */,
 				DB7A2D4B1EDEAE36008998E1 /* YjiTabBarVc.swift */,
+				DBEAB2B01EF0D9AA0069F3D2 /* YjiTempMoveVc.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -682,6 +685,7 @@
 				DBD9CA5A1EDC013200636DB5 /* ViewController.swift in Sources */,
 				DBBF54741EE8E57000CC13CE /* YjiFirebaseAuth.swift in Sources */,
 				DB90C4DD1EE7C25200107476 /* ImageGalleryLayout.swift in Sources */,
+				DBEAB2B11EF0D9AA0069F3D2 /* YjiTempMoveVc.swift in Sources */,
 				DB7A2D511EDEBA96008998E1 /* YjiMapVc.swift in Sources */,
 				DB90C4F31EE7C3A700107476 /* UIColor+Hue.swift in Sources */,
 				DB90C4E41EE7C25200107476 /* LightboxTransition.swift in Sources */,

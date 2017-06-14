@@ -12,8 +12,8 @@
         <!--Navigation Controller-->
         <scene sceneID="24b-9S-FFr">
             <objects>
-                <navigationController id="V9a-h9-xMt" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Kli-qa-PyR">
+                <navigationController storyboardIdentifier="YjiLoginNavigationVc" id="V9a-h9-xMt" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kli-qa-PyR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
