@@ -11,7 +11,7 @@ import RealmSwift
 
 class YjiRealmUser: Object {
     dynamic var userName = ""
-    dynamic var birthUnixTime: Double = 0.0
+    let birthUnixTime = RealmOptional<Double>()
     dynamic var uid = ""
     dynamic var avatarImage: Data? = nil
 
@@ -44,8 +44,18 @@ class YjiRealmManager: NSObject {
     }
     
     // MARK: - User
-    func addUserInfo(uid: String, userName: String, avatarImage: Data, birthUnixTime: Double) {
-        let object = YjiRealmUser(value: ["uid" : uid, "userName" : userName, "avatarImage" : avatarImage, "birthUnixTime" : birthUnixTime])
+    func addUserInfo(uid: String, userName: String?, avatarImage: Data?, birthUnixTime: Double?) {
+        let object = YjiRealmUser()
+        object.uid = uid
+        if let value = userName {
+            object.userName = value
+        }
+        if let value = avatarImage {
+            object.avatarImage = value
+        }
+        if let value = birthUnixTime {
+            object.birthUnixTime.value = value
+        }
         do {
             try realm.write {
                 realm.add(object, update: true)

@@ -27,7 +27,7 @@ class YjiUserInfoChangeVc: YjiBaseVc, UITextFieldDelegate, UIViewControllerTrans
         if let text = userInfo?.userName {
             nickName.text = text
         }
-        if let unixTime = userInfo?.birthUnixTime {
+        if let unixTime = userInfo?.birthUnixTime.value {
             birthBtn.setTitle(YjiCommonFunc.stringYMD(unixTime: unixTime), for: UIControlState.normal)
         }
         

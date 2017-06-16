@@ -15,7 +15,7 @@ class YjiUserInfoViewController: YjiBaseVc, UITextFieldDelegate, UIViewControlle
     @IBOutlet weak var nickName: HoshiTextField!
     @IBOutlet weak var userAvatar: UIImageView!
     @IBOutlet weak var birthBtn: UIButton!
-    private var birthUnixTime: TimeInterval? = 0
+    private var birthUnixTime: TimeInterval? = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,7 +54,7 @@ class YjiUserInfoViewController: YjiBaseVc, UITextFieldDelegate, UIViewControlle
             }
             // save data to local db
             let imageData = UIImagePNGRepresentation(image)
-            YjiRealmManager.sharedInstance.addUserInfo(uid: currentUid, userName: name, avatarImage: imageData!, birthUnixTime: (self?.birthUnixTime)!)
+            YjiRealmManager.sharedInstance.addUserInfo(uid: currentUid, userName: name, avatarImage: imageData, birthUnixTime: self?.birthUnixTime)
             // this view controller have not any meaning,just for animiation. buffer view controller
             let tempVc = YjiTempMoveVc()
             tempVc.transitioningDelegate = self
