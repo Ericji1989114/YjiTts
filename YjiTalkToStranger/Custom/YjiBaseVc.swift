@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 
-class YjiBaseVc: UIViewController, UINavigationControllerDelegate {
+class YjiBaseVc: UIViewController, UINavigationControllerDelegate, NVActivityIndicatorViewable {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,18 +38,15 @@ class YjiBaseVc: UIViewController, UINavigationControllerDelegate {
                                      from fromVC: UIViewController,
                                      to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return ZBFallenBricksAnimator()
-        
     }
 
+    // MARK:- activity indicator
+    func startLoading() {
+        startAnimating(CGSize(width: 30, height: 30), message: "Loading...", type: NVActivityIndicatorType(rawValue: 14))
+    }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func stopLoading() {
+        stopAnimating()
     }
-    */
 
 }
