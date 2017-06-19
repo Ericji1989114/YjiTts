@@ -25,7 +25,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         GMSServices.provideAPIKey("AIzaSyB0-_mQcS3dCWPMmWviEtcj3Ylfd1-2fr8")
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         setUpFirebase()
-        YjiFirebaseAuth.sharedInstance.addObserverForUserLoginState()
         
         return true
     }
@@ -63,6 +62,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func setUpFirebase() {
         FIRApp.configure()
+        YjiFirebaseAuth.sharedInstance.addObserverForUserLoginState()
     }
 }
 
