@@ -15,6 +15,8 @@ class YjiFirebaseRTDB: NSObject {
     // matching handle member
     var likeUids: [String] = []
     var fromUids: [String] = []
+    // closure
+    typealias YjiRTDBSyncUserInfoClosure = (Bool) -> Void
     
     class var sharedInstance: YjiFirebaseRTDB {
         struct Static {
@@ -109,6 +111,19 @@ class YjiFirebaseRTDB: NSObject {
                 }
                 
             }
+        })
+    }
+    
+    // MARK: - Get UserList to local db
+    func getAllUserId(completion: @escaping YjiRTDBSyncUserInfoClosure) {
+        self.firebaseRef.child("users").observeSingleEvent(of: .value, with: { (snapshot) in
+            guard let dictInfo = snapshot.value as? [String : Any] else{return}
+            let dbManager = YjiRealmManager.sharedInstance
+            for (key, value) in dictInfo {
+                guard let userInfo = value as? [String : Any] else {continue}
+                dbManager.addUserInfo(uid: key, userName: userInfo["userName"] as? String, avatarImage: nil, birthUnixTime: nil)
+            }
+            completion(true)
         })
     }
 

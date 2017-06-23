@@ -22,13 +22,21 @@ class YjiAnimationViewController: YjiBaseVc {
     //MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // kolodaview setting
         kolodaView.alphaValueSemiTransparent = kolodaAlphaValueSemiTransparent
         kolodaView.countOfVisibleCards = kolodaCountOfVisibleCards
         kolodaView.delegate = self
         kolodaView.dataSource = self
         kolodaView.animator = YjiKolodaAnimator(koloda: kolodaView)
-        
         self.modalTransitionStyle = UIModalTransitionStyle.flipHorizontal
+        
+        // userInfo reading
+        self.startLoading()
+        YjiFirebaseRTDB.sharedInstance.getAllUserId { (success) in
+            self.stopLoading()
+        }
+     
     }
     
     

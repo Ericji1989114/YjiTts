@@ -35,13 +35,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "YjiTalkToStranger/FirebaseServer/YjiFirebaseRTDB.swift"
-            timestampString = "519558812.392395"
+            filePath = "YjiTalkToStranger/Swipe Selection/YjiAnimationViewController.swift"
+            timestampString = "519881331.018205"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
-            landmarkName = "getAllUserId(completion:)"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
