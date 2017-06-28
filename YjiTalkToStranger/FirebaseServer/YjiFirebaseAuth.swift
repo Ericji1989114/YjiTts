@@ -24,8 +24,8 @@ class YjiFirebaseAuth: NSObject {
     }
     
     func addObserverForUserLoginState() {
-        try! FIRAuth.auth()?.signOut()
-        FIRAuth.auth()?.addStateDidChangeListener({ [weak self] (auth, user) in
+        try! Auth.auth().signOut()
+        Auth.auth().addStateDidChangeListener({ [weak self] (auth, user) in
             print(auth)
             print(user?.displayName ?? "")
             print(user?.uid ?? "")
@@ -34,8 +34,8 @@ class YjiFirebaseAuth: NSObject {
     }
     
     func loginFb(token: String, closure: @escaping YjiAuthFbLoginClosure) {
-        let credential = FIRFacebookAuthProvider.credential(withAccessToken: token)
-        FIRAuth.auth()?.signIn(with: credential) { (user, error) in
+        let credential = FacebookAuthProvider.credential(withAccessToken: token)
+        Auth.auth().signIn(with: credential) { (user, error) in
             guard error == nil else {
                 closure(false)
                 return
@@ -45,8 +45,8 @@ class YjiFirebaseAuth: NSObject {
     }
     
     func loginTw(token: String, secret: String, closure: @escaping YjiAuthtwLoginClosure) {
-        let credential = FIRTwitterAuthProvider.credential(withToken: token, secret: secret)
-        FIRAuth.auth()?.signIn(with: credential) { (user, error) in
+        let credential = TwitterAuthProvider.credential(withToken: token, secret: secret)
+        Auth.auth().signIn(with: credential) { (user, error) in
             guard error == nil else {
                 closure(false)
                 return

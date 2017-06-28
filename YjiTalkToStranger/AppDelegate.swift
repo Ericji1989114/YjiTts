@@ -61,7 +61,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func setUpFirebase() {
-        FIRApp.configure()
+        FirebaseApp.configure()
         YjiFirebaseAuth.sharedInstance.addObserverForUserLoginState()
     }
 }

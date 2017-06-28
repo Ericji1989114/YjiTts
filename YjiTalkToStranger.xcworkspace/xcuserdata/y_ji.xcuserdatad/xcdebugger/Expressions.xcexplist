@@ -18,5 +18,13 @@
             </PersistentString>
          </PersistentStrings>
       </ContextState>
+      <ContextState
+         contextName = "YjiUserInfoChangeVc.viewDidLoad() -&gt; ():YjiUserInfoChangeVc.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "userInfo?.avatarImage">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
    </ContextStates>
 </VariablesViewState>
